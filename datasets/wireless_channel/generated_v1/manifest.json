@@ -1,0 +1,225 @@
+{
+  "dataset_version": "rfoto-wireless-v1",
+  "created_utc": "2026-08-20T10:23:42.059793+00:00",
+  "generator": "C:\\RFOTO-ABC\\datasets\\wireless_channel\\tools\\generate_wireless_dataset.py",
+  "global_seed": 20260820,
+  "static_instances_per_scenario": 30,
+  "dynamic_episodes": 3,
+  "dynamic_slots_per_episode": 50,
+  "monte_carlo_samples_for_rician_q": 256,
+  "carrier_frequency_ghz": 3.5,
+  "channel_scenario": "3GPP TR 38.901-inspired UMi Street Canyon",
+  "noise_figure_db": 7.0,
+  "noise_psd_w_per_hz": 1.9952623149688828e-20,
+  "bandwidth_grid_hz": [
+    100000.0,
+    250000.0,
+    500000.0,
+    1000000.0,
+    2000000.0,
+    5000000.0,
+    10000000.0
+  ],
+  "gamma_grid_db": [
+    -3.0,
+    0.0,
+    3.0,
+    6.0,
+    10.0
+  ],
+  "q_reference": "bandwidth=1 MHz, gamma=3 dB",
+  "split_codes": {
+    "0": "tuning",
+    "1": "validation",
+    "2": "test"
+  },
+  "scenarios": [
+    {
+      "name": "S0",
+      "users": 10,
+      "servers": 3,
+      "area_side_m": 250.0,
+      "blockage_probability": 0.01,
+      "inr_db_low": -8.0,
+      "inr_db_high": 0.0,
+      "description": "small exact-solver benchmark"
+    },
+    {
+      "name": "S1",
+      "users": 20,
+      "servers": 3,
+      "area_side_m": 300.0,
+      "blockage_probability": 0.02,
+      "inr_db_low": -7.0,
+      "inr_db_high": 2.0,
+      "description": "low-load stable channel"
+    },
+    {
+      "name": "S2",
+      "users": 50,
+      "servers": 5,
+      "area_side_m": 400.0,
+      "blockage_probability": 0.05,
+      "inr_db_low": -5.0,
+      "inr_db_high": 5.0,
+      "description": "regular fading main benchmark"
+    },
+    {
+      "name": "S3",
+      "users": 100,
+      "servers": 5,
+      "area_side_m": 500.0,
+      "blockage_probability": 0.08,
+      "inr_db_low": -3.0,
+      "inr_db_high": 7.0,
+      "description": "high-load resource competition"
+    },
+    {
+      "name": "S4",
+      "users": 100,
+      "servers": 8,
+      "area_side_m": 600.0,
+      "blockage_probability": 0.25,
+      "inr_db_low": -2.0,
+      "inr_db_high": 10.0,
+      "description": "strong fading and blockage stress"
+    },
+    {
+      "name": "S5",
+      "users": 150,
+      "servers": 8,
+      "area_side_m": 700.0,
+      "blockage_probability": 0.12,
+      "inr_db_low": -4.0,
+      "inr_db_high": 8.0,
+      "description": "large heterogeneous benchmark"
+    },
+    {
+      "name": "S6",
+      "users": 200,
+      "servers": 10,
+      "area_side_m": 800.0,
+      "blockage_probability": 0.15,
+      "inr_db_low": -3.0,
+      "inr_db_high": 10.0,
+      "description": "large-scale and dynamic benchmark"
+    }
+  ],
+  "summaries": [
+    {
+      "file": "C:/RFOTO-ABC/datasets/wireless_channel/generated_v1/static/s0_static.npz",
+      "scenario": "S0",
+      "instances": 30,
+      "users": 10,
+      "servers": 3,
+      "links": 900,
+      "mean_q_ref": 0.9564940333366394,
+      "p05_q_ref": 0.7787874341011047,
+      "mean_rho_ref_k3": 0.9866200089454651,
+      "blocked_fraction": 0.006666666666666667,
+      "effective_los_fraction": 0.3022222222222222
+    },
+    {
+      "file": "C:/RFOTO-ABC/datasets/wireless_channel/generated_v1/static/s1_static.npz",
+      "scenario": "S1",
+      "instances": 30,
+      "users": 20,
+      "servers": 3,
+      "links": 1800,
+      "mean_q_ref": 0.9241885542869568,
+      "p05_q_ref": 0.5514056086540222,
+      "mean_rho_ref_k3": 0.9717127680778503,
+      "blocked_fraction": 0.018333333333333333,
+      "effective_los_fraction": 0.22833333333333333
+    },
+    {
+      "file": "C:/RFOTO-ABC/datasets/wireless_channel/generated_v1/static/s2_static.npz",
+      "scenario": "S2",
+      "instances": 30,
+      "users": 50,
+      "servers": 5,
+      "links": 7500,
+      "mean_q_ref": 0.8024804592132568,
+      "p05_q_ref": 0.007949982769787312,
+      "mean_rho_ref_k3": 0.890073299407959,
+      "blocked_fraction": 0.0548,
+      "effective_los_fraction": 0.16933333333333334
+    },
+    {
+      "file": "C:/RFOTO-ABC/datasets/wireless_channel/generated_v1/static/s3_static.npz",
+      "scenario": "S3",
+      "instances": 30,
+      "users": 100,
+      "servers": 5,
+      "links": 15000,
+      "mean_q_ref": 0.6838760375976562,
+      "p05_q_ref": 6.904395721818446e-09,
+      "mean_rho_ref_k3": 0.7954279184341431,
+      "blocked_fraction": 0.07846666666666667,
+      "effective_los_fraction": 0.12866666666666668
+    },
+    {
+      "file": "C:/RFOTO-ABC/datasets/wireless_channel/generated_v1/static/s4_static.npz",
+      "scenario": "S4",
+      "instances": 30,
+      "users": 100,
+      "servers": 8,
+      "links": 24000,
+      "mean_q_ref": 0.4613250195980072,
+      "p05_q_ref": 0.0,
+      "mean_rho_ref_k3": 0.563401997089386,
+      "blocked_fraction": 0.24995833333333334,
+      "effective_los_fraction": 0.08
+    },
+    {
+      "file": "C:/RFOTO-ABC/datasets/wireless_channel/generated_v1/static/s5_static.npz",
+      "scenario": "S5",
+      "instances": 30,
+      "users": 150,
+      "servers": 8,
+      "links": 36000,
+      "mean_q_ref": 0.4751945436000824,
+      "p05_q_ref": 0.0,
+      "mean_rho_ref_k3": 0.5887241959571838,
+      "blocked_fraction": 0.11972222222222222,
+      "effective_los_fraction": 0.07908333333333334
+    },
+    {
+      "file": "C:/RFOTO-ABC/datasets/wireless_channel/generated_v1/static/s6_static.npz",
+      "scenario": "S6",
+      "instances": 30,
+      "users": 200,
+      "servers": 10,
+      "links": 60000,
+      "mean_q_ref": 0.38328486680984497,
+      "p05_q_ref": 0.0,
+      "mean_rho_ref_k3": 0.48651859164237976,
+      "blocked_fraction": 0.14921666666666666,
+      "effective_los_fraction": 0.06538333333333333
+    },
+    {
+      "file": "C:/RFOTO-ABC/datasets/wireless_channel/generated_v1/dynamic/s6_dynamic.npz",
+      "scenario": "S6-dynamic",
+      "episodes": 3,
+      "slots": 50,
+      "users": 200,
+      "servers": 10,
+      "links": 300000,
+      "mean_q_ref": 0.378082811832428,
+      "p05_q_ref": 0.0,
+      "mean_rho_ref_k3": 0.48020848631858826,
+      "blocked_fraction": 0.14854,
+      "effective_los_fraction": 0.06501
+    }
+  ],
+  "sha256": {
+    "dynamic/s6_dynamic.npz": "f6d28a9e929f24bc9abdbe305d45965312d62dbf7c3ef151c6e8da36e80559cb",
+    "static/s0_static.npz": "c68439ad379130a9f9b6aaf15c8768b269b262f505e67f9ee6ca5c5450a004a5",
+    "static/s1_static.npz": "4d23f55309368490c46cf0e006ac1f737e6f75153e4a59ac6ecb8d7168aeaff8",
+    "static/s2_static.npz": "2c8f6e3d0c1160433d0ac4326da78b49f4d54141f88adb478fe1509f3657905d",
+    "static/s3_static.npz": "20734b63814db6d72a6224df3bd50698cccb4089f5aaee0f89900895b9aafe28",
+    "static/s4_static.npz": "15d3693e241af2b946fa7834a67ba963878d9b254bc421e3d8eea501cc7c977d",
+    "static/s5_static.npz": "c3f622d483a9869342d610b0f7e5d23a08a46bfe650687c07ff6c71e6b3fe01f",
+    "static/s6_static.npz": "eecdf07808372bb952b48ae6a63d7e280f7483ef723c63674dbf71b46a690664"
+  }
+}

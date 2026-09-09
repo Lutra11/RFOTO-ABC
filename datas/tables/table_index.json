@@ -1,0 +1,104 @@
+[
+  {
+    "sheet": "T07_Main",
+    "title": "Main comparison: mean objective",
+    "source": "Source: datas/tables/Table07_Main.csv",
+    "upstream": [
+      "datas/raw_results/exp48_main_comparison.csv"
+    ],
+    "note": "n=30 per scene/method. Search FE: 500 S1-S3, 375 S4-S6. Rules: 1 FE. Lower is better.",
+    "csv": "datas/tables/Table07_Main.csv"
+  },
+  {
+    "sheet": "T08_Advanced",
+    "title": "Advanced comparison: corrected best counts",
+    "source": "Source: datas/tables/Table08_Advanced.csv",
+    "upstream": [
+      "datas/raw_results/exp423_advanced_algorithm_comparison.csv",
+      "datas/revision_20260909/analysis/advanced_corrected_best_counts.csv"
+    ],
+    "note": "48 paired instances, 320 FE. Unique/tied/non-best are separate; tolerance 1e-12.",
+    "csv": "datas/tables/Table08_Advanced.csv"
+  },
+  {
+    "sheet": "T09_Matched",
+    "title": "Matched initialization: mean objective",
+    "source": "Source: datas/tables/Table09_Matched.csv",
+    "upstream": [
+      "datas/revision_20260909/revision_raw.csv"
+    ],
+    "note": "n=20 paired instances per stratum. Same initial population and same decoder; 14 initial evaluations included.",
+    "csv": "datas/tables/Table09_Matched.csv"
+  },
+  {
+    "sheet": "T10_Ablation",
+    "title": "Historical ablation: common-weight evaluation",
+    "source": "Source: datas/tables/Table10_Ablation.csv",
+    "upstream": [
+      "datas/raw_results/exp414_ablation.csv"
+    ],
+    "note": "S4; n=20; 400 FE. -F/-RF also changed the search objective. Common rescoring does not remove that confound.",
+    "csv": "datas/tables/Table10_Ablation.csv"
+  },
+  {
+    "sheet": "T11_Controlled_Ablation",
+    "title": "Fixed-objective component interventions",
+    "source": "Source: datas/tables/Table11_Controlled_Ablation.csv",
+    "upstream": [
+      "datas/revision_20260909/revision_raw.csv"
+    ],
+    "note": "n=20 per stratum. Uniform allocation changes decoded initial resources, not raw initial encodings.",
+    "csv": "datas/tables/Table11_Controlled_Ablation.csv"
+  },
+  {
+    "sheet": "T12_Sensitivity",
+    "title": "Fixed-objective parameter sensitivity",
+    "source": "Source: datas/tables/Table12_Sensitivity.csv",
+    "upstream": [
+      "datas/raw_results/exp415_sensitivity.csv"
+    ],
+    "note": "S4; n=6; 280 FE. The objective-weight sweep changes the metric scale and remains supplementary.",
+    "csv": "datas/tables/Table12_Sensitivity.csv"
+  },
+  {
+    "sheet": "T13_Temperature",
+    "title": "Frozen resource temperature comparison",
+    "source": "Source: datas/tables/Table13_Temperature.csv",
+    "upstream": [
+      "datas/revision_20260909/analysis/frozen_temperature_contrasts.csv",
+      "datas/revision_20260909/revision_raw.csv"
+    ],
+    "note": "n=20 per scene; 320 FE. Gain denominator is each 0.8 result. Pointwise paired 95% CI; Holm p in 24-test family.",
+    "csv": "datas/tables/Table13_Temperature.csv"
+  },
+  {
+    "sheet": "T14_Transfer",
+    "title": "Observed-state cross-scenario reoptimization",
+    "source": "Source: datas/tables/Table14_Transfer.csv",
+    "upstream": [
+      "datas/raw_results/exp417_ood.csv"
+    ],
+    "note": "n=15; 350 FE searches, 1 FE rule. Optimization and evaluation both observe the changed state.",
+    "csv": "datas/tables/Table14_Transfer.csv"
+  },
+  {
+    "sheet": "T15_Frozen_Test",
+    "title": "Six fresh scenario groups: frozen configurations",
+    "source": "Source: datas/tables/Table15_Frozen_Test.csv",
+    "upstream": [
+      "datas/revision_20260909/revision_raw.csv"
+    ],
+    "note": "n=20; 320 FE searches, 1 FE rule. Only RFOTO-ABC was evaluated at theta 1.6; not a decoder-controlled cross-temperature ranking.",
+    "csv": "datas/tables/Table15_Frozen_Test.csv"
+  },
+  {
+    "sheet": "T16_Scaling",
+    "title": "RFOTO-ABC scale and runtime",
+    "source": "Source: datas/tables/Table16_Scaling.csv",
+    "upstream": [
+      "datas/raw_results/exp413_scalability.csv"
+    ],
+    "note": "n=10; 320 FE. Scenario also changes with scale, so this is not an isolated complexity-order estimate.",
+    "csv": "datas/tables/Table16_Scaling.csv"
+  }
+]

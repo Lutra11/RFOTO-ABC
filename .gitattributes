@@ -1,0 +1,3 @@
+# Preserve exact frozen bytes, including Windows newlines.
+* -text
+# No LFS needed: committed binaries are below 100 MiB; raw archives are excluded.

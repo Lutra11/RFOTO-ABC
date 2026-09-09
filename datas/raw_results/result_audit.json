@@ -1,0 +1,117 @@
+{
+  "files": {
+    "exp47_small_reference.csv": {
+      "rows": 60,
+      "expected_rows": 60,
+      "row_count_ok": true,
+      "finite_numeric": true
+    },
+    "exp48_main_comparison.csv": {
+      "rows": 1980,
+      "expected_rows": 1980,
+      "row_count_ok": true,
+      "finite_numeric": true
+    },
+    "exp49_convergence.csv": {
+      "rows": 12200,
+      "expected_rows": 12200,
+      "row_count_ok": true,
+      "finite_numeric": true
+    },
+    "exp410_reliability_stress.csv": {
+      "rows": 300,
+      "expected_rows": 300,
+      "row_count_ok": true,
+      "finite_numeric": true
+    },
+    "exp411_fairness_tradeoff.csv": {
+      "rows": 90,
+      "expected_rows": 90,
+      "row_count_ok": true,
+      "finite_numeric": true
+    },
+    "exp412_resource_scarcity.csv": {
+      "rows": 200,
+      "expected_rows": 200,
+      "row_count_ok": true,
+      "finite_numeric": true
+    },
+    "exp413_scalability.csv": {
+      "rows": 150,
+      "expected_rows": 150,
+      "row_count_ok": true,
+      "finite_numeric": true
+    },
+    "exp414_ablation.csv": {
+      "rows": 160,
+      "expected_rows": 160,
+      "row_count_ok": true,
+      "finite_numeric": true
+    },
+    "exp415_sensitivity.csv": {
+      "rows": 174,
+      "expected_rows": 174,
+      "row_count_ok": true,
+      "finite_numeric": true
+    },
+    "exp416_dynamic.csv": {
+      "rows": 750,
+      "expected_rows": 750,
+      "row_count_ok": true,
+      "finite_numeric": true
+    },
+    "exp417_ood.csv": {
+      "rows": 180,
+      "expected_rows": 180,
+      "row_count_ok": true,
+      "finite_numeric": true
+    },
+    "exp418_pairwise.csv": {
+      "rows": 5,
+      "expected_rows": 5,
+      "row_count_ok": true,
+      "finite_numeric": true
+    },
+    "exp418_ranks.csv": {
+      "rows": 6,
+      "expected_rows": 6,
+      "row_count_ok": true,
+      "finite_numeric": true
+    }
+  },
+  "checks": {
+    "main_scenarios": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ],
+    "main_algorithms": [
+      "DE",
+      "Delay-Greedy",
+      "GA",
+      "Load-Aware",
+      "Local-only",
+      "Max-SINR",
+      "Offload-then-Allocate",
+      "PSO",
+      "RFOTO-ABC",
+      "Random-feasible",
+      "Standard-ABC"
+    ],
+    "main_all_resource_feasible": true,
+    "main_objective_range": [
+      0.0873046594399044,
+      6.435392615203469
+    ],
+    "small_reference_negative_gaps": 0
+  },
+  "warnings": [
+    "Section 4.7 uses the best observed value, not a certified global optimum or lower bound.",
+    "The SLA violation_rate is a performance metric and is distinct from hard resource feasibility.",
+    "RFOTO-ABC-D replaces the constraint-aware allocation with equal allocation; it is not a direct-variable penalty implementation.",
+    "Dynamic warm start did not outperform cold start under the tested budget and must be reported as a negative result."
+  ]
+}

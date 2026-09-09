@@ -1,0 +1,7 @@
+"""Section 4.3.2: fixed-objective component and decoder comparisons."""
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
+from core_runner import main
+if __name__ == '__main__':
+    main('ablation')

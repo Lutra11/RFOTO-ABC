@@ -1,0 +1,30 @@
+[
+  {
+    "scenario": "S5",
+    "run": 4,
+    "tied_methods": [
+      "CMAES-lite",
+      "GWO",
+      "Gbest-ABC",
+      "JADE",
+      "LSHADE-lite",
+      "MeABC",
+      "RFOTO-ABC"
+    ],
+    "objective": 0.3270641453401822
+  },
+  {
+    "scenario": "S5",
+    "run": 7,
+    "tied_methods": [
+      "CMAES-lite",
+      "GWO",
+      "Gbest-ABC",
+      "JADE",
+      "LSHADE-lite",
+      "MeABC",
+      "RFOTO-ABC"
+    ],
+    "objective": 0.381250097719619
+  }
+]

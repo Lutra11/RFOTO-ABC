@@ -1,0 +1,15 @@
+{
+  "rows": 2040,
+  "controlled_runs": 1440,
+  "frozen_test_runs": 600,
+  "controlled_contrasts": 84,
+  "frozen_test_contrasts": 24,
+  "initial_population_hash_check": true,
+  "identical_initial_objective_check": true,
+  "all_reliability_feasible": true,
+  "scipy": "1.18.0",
+  "bootstrap": "10000 paired resamples; percentile 95%; seed 20260909",
+  "paired_test": "two-sided Wilcoxon, zero_method=wilcox, normal approximation; all-zero p=1; Holm by suite",
+  "analysis_script_sha256": "e647bdb423d108c047b84dc3da1805e58d831ba939c1cd37ae480a04f9922163",
+  "raw_sha256": "d9e1c943ffac3bb67ac27a105a00be981ca7c713e8bacad1435267e20b0e0f63"
+}

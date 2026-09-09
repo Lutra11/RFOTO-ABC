@@ -1,0 +1,1802 @@
+[
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 0,
+    "wireless_seed": 910020000,
+    "task_seed": 1010020000,
+    "path": "instances\\controlled\\S2_00.npz",
+    "sha256": "6707a51f4250c1d69d1f281cb7dbfb8f3960028c1e6c50d964df2914affa1172",
+    "gain_sha256": "b5b7299842e9b219880d4e677a43612d66eec8ef3d3dcf5a2329bf69a2662441"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 1,
+    "wireless_seed": 910020001,
+    "task_seed": 1010020001,
+    "path": "instances\\controlled\\S2_01.npz",
+    "sha256": "8e0f9104e4cfbbb023db0dc0310b3d50c6b9bc60f50ba92fc2141fbadc1eda8b",
+    "gain_sha256": "96d7f81214b1bb3abb949e530edc7cdf417bcee23640cb8a0b95f0f7f32e950c"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 2,
+    "wireless_seed": 910020002,
+    "task_seed": 1010020002,
+    "path": "instances\\controlled\\S2_02.npz",
+    "sha256": "ba93cdf6a8de17ccc2b6994d2a4be9a9db1b51185538c15a071cd43a7ec12200",
+    "gain_sha256": "164db87f25d87560e6d05e9ffeff44c321712f3657ef39997f39bccb8179bc32"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 3,
+    "wireless_seed": 910020003,
+    "task_seed": 1010020003,
+    "path": "instances\\controlled\\S2_03.npz",
+    "sha256": "bbec9bcf32f25c4b96fa8294dd963a18f1cddc9537c2b8ad69994be33537671f",
+    "gain_sha256": "3e6a2ea7167ccfbeb1cd0362e65da4376529634e4591fd273df05f8262166bc0"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 4,
+    "wireless_seed": 910020004,
+    "task_seed": 1010020004,
+    "path": "instances\\controlled\\S2_04.npz",
+    "sha256": "58d2064c2a745138dd54ddfa7c84360e14b0ceffd20ced5f5d949e3b38f46175",
+    "gain_sha256": "d9e74b81e171122d839d6d96ad47b0fb0182d758dca1697cc650cb1cb7871031"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 5,
+    "wireless_seed": 910020005,
+    "task_seed": 1010020005,
+    "path": "instances\\controlled\\S2_05.npz",
+    "sha256": "794f9636393d9fe9b39fc176434ffa10b2b60ed3dcd2c7c3353897c676892fdd",
+    "gain_sha256": "88612f1ea9b8041fb858b58f236bf48bb082c186b2e05b0922568c0b2b57c427"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 6,
+    "wireless_seed": 910020006,
+    "task_seed": 1010020006,
+    "path": "instances\\controlled\\S2_06.npz",
+    "sha256": "22830ac1bfe17eeb17509722f9bbd28341a4dd97c268e80aa2c572034f203da5",
+    "gain_sha256": "9dd49de4334326f156485495ff209a7a03e1649b290799aa8be5432ce70e9465"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 7,
+    "wireless_seed": 910020007,
+    "task_seed": 1010020007,
+    "path": "instances\\controlled\\S2_07.npz",
+    "sha256": "e51bcc10da119641b1d8749bc616dcbee5854ebbdd1910a5bf50ca12b23b8f6b",
+    "gain_sha256": "dd0ea35ffa5c1cb9c37a4b0c814dd2f43db40e18aec021315ca126c38e515e7f"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 8,
+    "wireless_seed": 910020008,
+    "task_seed": 1010020008,
+    "path": "instances\\controlled\\S2_08.npz",
+    "sha256": "cd217f7ae40848784abb591296437873dac9bbf577d15aca0c4c2d5f48993dc5",
+    "gain_sha256": "84ca3037aeed40848756162c236dc719b358a3489e069e48041012526cf8fe4d"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 9,
+    "wireless_seed": 910020009,
+    "task_seed": 1010020009,
+    "path": "instances\\controlled\\S2_09.npz",
+    "sha256": "22cdee61dd2992fc037c005dbc176d04ce02878d522a96ba372c49a12a80201d",
+    "gain_sha256": "3c6cdadae7cec8a3a83fff84d3c871f8a60e3dee048f9921b6ff9d845ae62541"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 10,
+    "wireless_seed": 910020010,
+    "task_seed": 1010020010,
+    "path": "instances\\controlled\\S2_10.npz",
+    "sha256": "62191d05ba3b4b3ac809c2cc34f3f5f7469bce408cc1c40044773c59cd201bc9",
+    "gain_sha256": "4c3d8b778329572eca23811c0a6ac9241f1658ad818f9b5b63e5caba0ed591ae"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 11,
+    "wireless_seed": 910020011,
+    "task_seed": 1010020011,
+    "path": "instances\\controlled\\S2_11.npz",
+    "sha256": "8c9de306dc0f267e13df946b7cb2c14d07dc64103a8cd5241b18d79234275620",
+    "gain_sha256": "5f2a86075dd63c8c09164784b38bf9c7b148cb2216f29b368da64ce3b847940d"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 12,
+    "wireless_seed": 910020012,
+    "task_seed": 1010020012,
+    "path": "instances\\controlled\\S2_12.npz",
+    "sha256": "f917849c631423100f6f87ef628458a1563f291c8f0c8f63b7a646b1c36d2966",
+    "gain_sha256": "c7429a50fc725cc12b7b4f75eabf7d088a37f53e5a274362f88fd7d2c2e0e669"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 13,
+    "wireless_seed": 910020013,
+    "task_seed": 1010020013,
+    "path": "instances\\controlled\\S2_13.npz",
+    "sha256": "18e83998b1dce0e85f202f09d6797f8970210e85ee5095b2d708281d440b9c61",
+    "gain_sha256": "254c82b700f041be71ccc57fcaa48083f75022eecfae24d2cbf0def0d9b1e862"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 14,
+    "wireless_seed": 910020014,
+    "task_seed": 1010020014,
+    "path": "instances\\controlled\\S2_14.npz",
+    "sha256": "cded371e63e3f8c50fe547fd3b6f218a33d7ba44824674d34bd6e8882e5dce5d",
+    "gain_sha256": "ada3eb4e7d49e3cc2143c95852892e8027f69229df5defb7bebd85192186a47d"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 15,
+    "wireless_seed": 910020015,
+    "task_seed": 1010020015,
+    "path": "instances\\controlled\\S2_15.npz",
+    "sha256": "124eabd2cd3714accf6fe2e4e0646c3009bdb3a3e304eb7f0974367bace963dd",
+    "gain_sha256": "2ce8ed71464f628f7779c5e36dd22df351314c7a40f76dc2676270a0f9e6b486"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 16,
+    "wireless_seed": 910020016,
+    "task_seed": 1010020016,
+    "path": "instances\\controlled\\S2_16.npz",
+    "sha256": "fb55daa94941e6f601ec1bc6d6e27cf007ef169b12fc78932adb3599f150fabb",
+    "gain_sha256": "b905f7713ca300c951a9e5d553eed359656e34d0dc2ef3e2b1d8bf211bae399f"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 17,
+    "wireless_seed": 910020017,
+    "task_seed": 1010020017,
+    "path": "instances\\controlled\\S2_17.npz",
+    "sha256": "98a98439fbeafe45e19497000108be38930d0242a46faea212d5a35d44286977",
+    "gain_sha256": "9d0c4bdb7034697c4977aa60372e348a3aad391ad3d639c1782093afba403608"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 18,
+    "wireless_seed": 910020018,
+    "task_seed": 1010020018,
+    "path": "instances\\controlled\\S2_18.npz",
+    "sha256": "84a454a3e08a31bff94fe88c8fbd09108f4ce7436ab162c7712f655eace18e06",
+    "gain_sha256": "7fc2d93a13f765b62a6be49296efa849e742515c7f06fd80ca87a1c2c6330df5"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S2",
+    "run": 19,
+    "wireless_seed": 910020019,
+    "task_seed": 1010020019,
+    "path": "instances\\controlled\\S2_19.npz",
+    "sha256": "501f2bec790224315ba779a6e4ff019e81ae8d3a6d5097a92389581b731a350e",
+    "gain_sha256": "9ba04ae826e33177768a822cef28fc3bd96b28db31c4c9f2aebe45257d595aa1"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 0,
+    "wireless_seed": 910040000,
+    "task_seed": 1010040000,
+    "path": "instances\\controlled\\S4_00.npz",
+    "sha256": "0ac61357aa17a632b8b4446cd532b8f05080dfe1691adeab0f3272d75f75177e",
+    "gain_sha256": "74c364a9cc73542eda40b55fe111e56360fbae7ee160f8e7fbfbc564354e5ef6"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 1,
+    "wireless_seed": 910040001,
+    "task_seed": 1010040001,
+    "path": "instances\\controlled\\S4_01.npz",
+    "sha256": "abb6ec87d9e254350deea3659897a42ccd9dd86527c2cbb80232b674710b7a22",
+    "gain_sha256": "f821d2e45001610d495fe513fdef063dca5b0b7695b1f915674272d974d4a868"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 2,
+    "wireless_seed": 910040002,
+    "task_seed": 1010040002,
+    "path": "instances\\controlled\\S4_02.npz",
+    "sha256": "4953bd0c552ff56c0adfe7133a19b98f512b8cdf01f2e513fd4814e0164bb004",
+    "gain_sha256": "fd18202c938208c1154262ec6db9642b6ee7d4234b8d7e161373e48f4ed16375"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 3,
+    "wireless_seed": 910040003,
+    "task_seed": 1010040003,
+    "path": "instances\\controlled\\S4_03.npz",
+    "sha256": "74bdac3ee8e710f1bee61121e2053dfa0f894e1c29750dc8376207238dad8cb7",
+    "gain_sha256": "8a8c19153a96240783e510e969ea370ea5547e6a87e0de096a27dc205fe68112"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 4,
+    "wireless_seed": 910040004,
+    "task_seed": 1010040004,
+    "path": "instances\\controlled\\S4_04.npz",
+    "sha256": "a2624a1573c0fc67b8e41cd275033190c153de182490b91cf5b8c5e74d92a039",
+    "gain_sha256": "ab23f86bc9a689a6d3f80c9f3760a47068911dc19c3b198905c845c30e974f0c"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 5,
+    "wireless_seed": 910040005,
+    "task_seed": 1010040005,
+    "path": "instances\\controlled\\S4_05.npz",
+    "sha256": "f8ed4fbc020737150861f0914ef28674aec7e720c4f6d2d72a6a5a11d0364a92",
+    "gain_sha256": "4831748c611d355e481a79042cd123e2a7450c74869e0e8db21550d970496dc5"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 6,
+    "wireless_seed": 910040006,
+    "task_seed": 1010040006,
+    "path": "instances\\controlled\\S4_06.npz",
+    "sha256": "688687d2a5d5f48d4d2c9329d6b48269e7ad1348423791bf7c886ee0f1efd0fe",
+    "gain_sha256": "e8f160ff175ab77ea0b44680e1799e3dda26c8d788474a5a4e199aef244c405c"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 7,
+    "wireless_seed": 910040007,
+    "task_seed": 1010040007,
+    "path": "instances\\controlled\\S4_07.npz",
+    "sha256": "7bc5e58f206ba1fd7fcef86249e73df6d3ae90ed8d3e31cf1dc9f7311b21b95e",
+    "gain_sha256": "28f3df05df2a200e76e976832b60bf225251c5e579a1372cd146e74933b10cfc"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 8,
+    "wireless_seed": 910040008,
+    "task_seed": 1010040008,
+    "path": "instances\\controlled\\S4_08.npz",
+    "sha256": "952b674b7945c6cd6edde0578609cff642623b50da841cf74eb83759c45f0b7d",
+    "gain_sha256": "c0cd05b8ec0bd588e76dfc07e3c7a3afcd6c673d3c1572c3f3362e0d280526d3"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 9,
+    "wireless_seed": 910040009,
+    "task_seed": 1010040009,
+    "path": "instances\\controlled\\S4_09.npz",
+    "sha256": "49ab6d67368c64b2c86591a48a2282a3ee6e4e3a1dd1764c04100a1cb1f30baf",
+    "gain_sha256": "9439050ffd9f50fe8798812c8f734f30cab36151a55386a9753737813b645148"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 10,
+    "wireless_seed": 910040010,
+    "task_seed": 1010040010,
+    "path": "instances\\controlled\\S4_10.npz",
+    "sha256": "e055db1d4529757e18ba4d77e32dd359bcee166afa01936ab517a22483295231",
+    "gain_sha256": "c9c83b90a770b9a5730546f76d0819494557638186436a788b7b113924f149a6"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 11,
+    "wireless_seed": 910040011,
+    "task_seed": 1010040011,
+    "path": "instances\\controlled\\S4_11.npz",
+    "sha256": "901bed2cd12fca436350b1e54e1e61de12ef2d1f672069ff0429e02d9bd3fb8a",
+    "gain_sha256": "4ea78d4d28e9c9236dfd85b8a63d520ff22eefda08df2c063f6b3ee1d0a0c45e"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 12,
+    "wireless_seed": 910040012,
+    "task_seed": 1010040012,
+    "path": "instances\\controlled\\S4_12.npz",
+    "sha256": "9c7c46e754a3cb5651f2033db3930f750056dda16c4ce2c57d8b57e445ec8176",
+    "gain_sha256": "18597275486a7804e1ea34c4c3bd11e5f1fd20dbd32e87dd4f6c287143296eea"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 13,
+    "wireless_seed": 910040013,
+    "task_seed": 1010040013,
+    "path": "instances\\controlled\\S4_13.npz",
+    "sha256": "86201375c3d6b32f35af41e73918981720b342dcb32d0a2cb921cf9f4b66dee5",
+    "gain_sha256": "993b9a45caee34a9920dab324613d3e05307e5f76fb68214a0a5503cec118d04"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 14,
+    "wireless_seed": 910040014,
+    "task_seed": 1010040014,
+    "path": "instances\\controlled\\S4_14.npz",
+    "sha256": "5e9f0766d3096896198c6b11185eeed8b1da1c62da055ca1bc517c9878d97abd",
+    "gain_sha256": "a0dfca5ca63203c21f2b3f52cf6dd6b96889bf99448d54950def0bbee71e500c"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 15,
+    "wireless_seed": 910040015,
+    "task_seed": 1010040015,
+    "path": "instances\\controlled\\S4_15.npz",
+    "sha256": "b04746dc0f5c2321cbf4ce1394f85900448172777d9b767d71c48b90a58ed764",
+    "gain_sha256": "09bc1deebee6ada1f52ceb2f82a52aaea904f4c19044564f75d9418522832adc"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 16,
+    "wireless_seed": 910040016,
+    "task_seed": 1010040016,
+    "path": "instances\\controlled\\S4_16.npz",
+    "sha256": "41381d9f6ace36ebfb384e31978f353a74cc41c03cdaf0b80a73289f23cd8df0",
+    "gain_sha256": "3ecec3421cc7e4bab54cd82b8e5d030bb94a40e034037320bb3551a71de4dfd6"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 17,
+    "wireless_seed": 910040017,
+    "task_seed": 1010040017,
+    "path": "instances\\controlled\\S4_17.npz",
+    "sha256": "476c5603455c1e8e67fa5a24c1ae04e63e172081310e492bd7b4596ded2485ad",
+    "gain_sha256": "babdb58e2a804ca8bf377c507c19c70cb0ad3472797b6bb6c260d591d2ec3282"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 18,
+    "wireless_seed": 910040018,
+    "task_seed": 1010040018,
+    "path": "instances\\controlled\\S4_18.npz",
+    "sha256": "5ef423631523032fb17302d2754ce308989448e252828ac0d81e77db98a5f26c",
+    "gain_sha256": "fdcd4ab33d25a192f1574407d84c6f24622bdb0350cbca68f9332a394a9349d7"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S4",
+    "run": 19,
+    "wireless_seed": 910040019,
+    "task_seed": 1010040019,
+    "path": "instances\\controlled\\S4_19.npz",
+    "sha256": "843ae9a39181a14a99e5199684b3a19f6e2a467a0d5d214c763a10b6b5cf4d69",
+    "gain_sha256": "54558555c32d19db4af4a26a59fe66e01b1bf46f7ab9dba35946f52de2fee09f"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 0,
+    "wireless_seed": 910060000,
+    "task_seed": 1010060000,
+    "path": "instances\\controlled\\S6_00.npz",
+    "sha256": "86208dbf8d87b27c0919bf29525a4b12c80886b7ddfd4499d5a44e03a7cf7783",
+    "gain_sha256": "a32205534f2422e0505e4c2bd2ea8168426ad35581840d213a3ab26a399e6957"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 1,
+    "wireless_seed": 910060001,
+    "task_seed": 1010060001,
+    "path": "instances\\controlled\\S6_01.npz",
+    "sha256": "7057b78e75569b82ed1aa2938bbbee1c4446a4918114fead574bc5817591e8b5",
+    "gain_sha256": "f855e128ff378ec6c44d879d07b67520ee1a6e3d64d6c3ebd5dcad127be9efcf"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 2,
+    "wireless_seed": 910060002,
+    "task_seed": 1010060002,
+    "path": "instances\\controlled\\S6_02.npz",
+    "sha256": "391a9933b1ffd1878ac010929ce56177953a4be6c2c6cf03c38519551d797f9d",
+    "gain_sha256": "74583f1dd8f3e83a26d8f8c1083bda6e0adb4f54b8d2b76aa757e17c497d4c59"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 3,
+    "wireless_seed": 910060003,
+    "task_seed": 1010060003,
+    "path": "instances\\controlled\\S6_03.npz",
+    "sha256": "fd20a0a5f41906b6b55e3a46779123eb90fe37c29d749b00a338763b17b68415",
+    "gain_sha256": "819397b674441ef0db89099f01ce3a235ede99d8690c87ea2044dce766f4f059"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 4,
+    "wireless_seed": 910060004,
+    "task_seed": 1010060004,
+    "path": "instances\\controlled\\S6_04.npz",
+    "sha256": "270e7633988aa18050dc81cbf48d4b6b93323148f254a84af46968623dcd7bb3",
+    "gain_sha256": "450b33834f3c4f6a74ae6826510f52f4543131c15d1df0d44352ffef1cce4ab6"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 5,
+    "wireless_seed": 910060005,
+    "task_seed": 1010060005,
+    "path": "instances\\controlled\\S6_05.npz",
+    "sha256": "4181588c434b8f86944927b31694cad41d8b62d9bf68abf8ed58b07b97fe58a3",
+    "gain_sha256": "899ad7930fc2dca7eded90029b582aee7606a28058070991230add0808e8d3ec"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 6,
+    "wireless_seed": 910060006,
+    "task_seed": 1010060006,
+    "path": "instances\\controlled\\S6_06.npz",
+    "sha256": "8f1f79b1c4264af99b5d46f87272381f82deddce9ddf095b7848d5df3bca6d4c",
+    "gain_sha256": "37116ee74e93133c204c5736d98cf73a505f1cf19e85a7d9e8f94d2d150ea023"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 7,
+    "wireless_seed": 910060007,
+    "task_seed": 1010060007,
+    "path": "instances\\controlled\\S6_07.npz",
+    "sha256": "1e83503de1451dcadaf27978d4c73e1df5ad7e8b2e57416e93e6e928d9a5a290",
+    "gain_sha256": "4f9e303eaabcc28c46ac25cfadad30e13e64396931b09456a42b2af1db3ac9c6"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 8,
+    "wireless_seed": 910060008,
+    "task_seed": 1010060008,
+    "path": "instances\\controlled\\S6_08.npz",
+    "sha256": "9abdd32269ec2f7e842ddf1300d44f52e0c5899ffbdf8ec76631e9c9fbaa2d2f",
+    "gain_sha256": "3fbfef43b0cfca4e3343ddfd336257d5872a0082456de5bddaa5128b3997e6f3"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 9,
+    "wireless_seed": 910060009,
+    "task_seed": 1010060009,
+    "path": "instances\\controlled\\S6_09.npz",
+    "sha256": "722100c149736cd761e1bfd3e4227f6b931caa914ccc005055f22809cc48bdfb",
+    "gain_sha256": "4b2cd5ee684a6d30eee9aa90bb933d426af44ef5cb95276f1636c97d95da29fa"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 10,
+    "wireless_seed": 910060010,
+    "task_seed": 1010060010,
+    "path": "instances\\controlled\\S6_10.npz",
+    "sha256": "b355ce2b797ab8af63430fc65b8cedebf39f24dbf744498e6b9e093625cec1e5",
+    "gain_sha256": "a719699ffaa33c2705d097ae14bf9de263f9c39faf244a9271a3d52f720bb710"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 11,
+    "wireless_seed": 910060011,
+    "task_seed": 1010060011,
+    "path": "instances\\controlled\\S6_11.npz",
+    "sha256": "b4866aa26d625abe9db7b30a7460d8c0584ea2a24af39f4a83bd6a865fc5e8a1",
+    "gain_sha256": "59c307cbb1e4b2f3cdfe812a74190ba05bc58bccd7200a98585c472d8ab8a1a2"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 12,
+    "wireless_seed": 910060012,
+    "task_seed": 1010060012,
+    "path": "instances\\controlled\\S6_12.npz",
+    "sha256": "3896a440b34ae3b1c17b560b37a08fe3e35401bd8fd3787b8383a2f0c2e912cd",
+    "gain_sha256": "6aff4f2f627d3a3ac6d6c382d190bb97312ae426e675056651508c19764ab12a"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 13,
+    "wireless_seed": 910060013,
+    "task_seed": 1010060013,
+    "path": "instances\\controlled\\S6_13.npz",
+    "sha256": "022a9614b381fa77b5a4decd33112346262f8df431c287aff2051a3ca87ac83a",
+    "gain_sha256": "2df0e7e36be80833f6828ff65bbbdbd4f578f96bad171887f9d2fd8f47dfb10c"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 14,
+    "wireless_seed": 910060014,
+    "task_seed": 1010060014,
+    "path": "instances\\controlled\\S6_14.npz",
+    "sha256": "7f7967f7ee966c0580e3c6d2356dc49bd2f3a62eb046a83854eb6fdc1c1322c0",
+    "gain_sha256": "e3e456eec507267db0b29e8d46c524fdc27c98218bae0b5c6d95742f50f0e180"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 15,
+    "wireless_seed": 910060015,
+    "task_seed": 1010060015,
+    "path": "instances\\controlled\\S6_15.npz",
+    "sha256": "a066ef5deeca00fd3f51b57c2ae779a60ed1dfd185c4536addf783409cfa7e7c",
+    "gain_sha256": "6217e831e1e9acce19799be6841d0813c150e2d3afbeb7c0352952384a3d5d39"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 16,
+    "wireless_seed": 910060016,
+    "task_seed": 1010060016,
+    "path": "instances\\controlled\\S6_16.npz",
+    "sha256": "2d5622febd4f3dbf6f11c0611e34700e8e9571958d0ad495401fb425884ae991",
+    "gain_sha256": "969c900cc0bc2aad5edd51573994453a8e439ba22207670a34fd6885aeb16b76"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 17,
+    "wireless_seed": 910060017,
+    "task_seed": 1010060017,
+    "path": "instances\\controlled\\S6_17.npz",
+    "sha256": "77b33ffb0eeeef22e16ae02e02cd002122bf9e6bda943d10b15df4560e9c5406",
+    "gain_sha256": "ba293375ce77ccb186a27186c4607bbc497dd2c402c8537cf176952cacf00b84"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 18,
+    "wireless_seed": 910060018,
+    "task_seed": 1010060018,
+    "path": "instances\\controlled\\S6_18.npz",
+    "sha256": "0a380dd09b1c4920ee1e53839c152c1c3b0da12a4baca2662146bfe333f310b6",
+    "gain_sha256": "ab95e3796acc415ca2cea29f64631133cf5a029ea7dc5d12958a7ee1232de64e"
+  },
+  {
+    "suite": "controlled",
+    "scenario": "S6",
+    "run": 19,
+    "wireless_seed": 910060019,
+    "task_seed": 1010060019,
+    "path": "instances\\controlled\\S6_19.npz",
+    "sha256": "ae200959ce800aa636772ff509dc8ed608e7f138944d2b1f38d4ed4f0cb7c705",
+    "gain_sha256": "5385d260f2c7d2a88f45d1494647efe7a3a17942a75fbd40208bf019a0072d54"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 0,
+    "wireless_seed": 911010000,
+    "task_seed": 1011010000,
+    "path": "instances\\frozen_test\\S1_00.npz",
+    "sha256": "d3f549ba6a020e5d93a824ac81ae8b4cab58cdedff27c4f14bc80e2b490df3b9",
+    "gain_sha256": "344235d5824946e9fd5a8fa64b879f961c031802cae1cc6acc90e11bea7cd6b6"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 1,
+    "wireless_seed": 911010001,
+    "task_seed": 1011010001,
+    "path": "instances\\frozen_test\\S1_01.npz",
+    "sha256": "5a53ff382d5193868d0a5fa8d621ba053564581b7007b852ee92986fcce7349e",
+    "gain_sha256": "dd6baa3927a0eebb4d7a5f82c3a885b5df907c8d3a74687fa8de2e2681baafdb"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 2,
+    "wireless_seed": 911010002,
+    "task_seed": 1011010002,
+    "path": "instances\\frozen_test\\S1_02.npz",
+    "sha256": "072671fa5ceb534886e22b12201a19beedd8be3de9da5c622a301f8872662a20",
+    "gain_sha256": "84a14c4d565619bc5b94069aadf0f17afa2847c6e27e6919567a85bceaee9cd6"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 3,
+    "wireless_seed": 911010003,
+    "task_seed": 1011010003,
+    "path": "instances\\frozen_test\\S1_03.npz",
+    "sha256": "205f6243e3fe21a80aa3f7580429c5da0b4976b716db382ac13f3cf7658dcbbe",
+    "gain_sha256": "ce74c1dfceb0f53913acd7cbf461ef72e017296652f245b60f727251205fa305"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 4,
+    "wireless_seed": 911010004,
+    "task_seed": 1011010004,
+    "path": "instances\\frozen_test\\S1_04.npz",
+    "sha256": "a37caa019a017ffc5e02eb3493e0aaae8d16e5651c4cab021edcef370b636969",
+    "gain_sha256": "2d38c4d1df6abd44a173d4daf132991387c3c0cf6cbf4619ef17ecfc6b388ebb"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 5,
+    "wireless_seed": 911010005,
+    "task_seed": 1011010005,
+    "path": "instances\\frozen_test\\S1_05.npz",
+    "sha256": "c0bf9800c40563217b2fb32091b11e61c10216864edcaa5da744fc09f152031a",
+    "gain_sha256": "3e50a8616372f871cabfe72c0c336d2bc59a0aa3699a0c10f3414236c337f40c"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 6,
+    "wireless_seed": 911010006,
+    "task_seed": 1011010006,
+    "path": "instances\\frozen_test\\S1_06.npz",
+    "sha256": "2e32b73eaa20d18a21412e9889a48367213749fea20fe6a3047ec1a5113ac1ae",
+    "gain_sha256": "c95bd09bdb226b2253824bfd7626376d95089d7b329dcfe5409e4f0368e68683"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 7,
+    "wireless_seed": 911010007,
+    "task_seed": 1011010007,
+    "path": "instances\\frozen_test\\S1_07.npz",
+    "sha256": "19fae2766f4fb76949cb3b0fe53df0428532042637b9fdbf73feed48a1220458",
+    "gain_sha256": "0144c90cc40349c9d214253128aec59d1173a11a4fb40ad081d6b08c80960126"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 8,
+    "wireless_seed": 911010008,
+    "task_seed": 1011010008,
+    "path": "instances\\frozen_test\\S1_08.npz",
+    "sha256": "0b5225bb1c1f247e5e08faa391e7c49243bc2a96553225bc0597f6e63cc52898",
+    "gain_sha256": "e500630c43647ca39fdd90bbb7503d005c28589ef7a73c77d70b41c9214c72cd"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 9,
+    "wireless_seed": 911010009,
+    "task_seed": 1011010009,
+    "path": "instances\\frozen_test\\S1_09.npz",
+    "sha256": "1941faae548fbf90bece87d57b1ea239c44eb58f4a40c518a3cb9b2d35cf9dc4",
+    "gain_sha256": "60b5786fcacecd654cc2fbb4f1419fdb5eb0375c382d376a91d853b4010952c5"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 10,
+    "wireless_seed": 911010010,
+    "task_seed": 1011010010,
+    "path": "instances\\frozen_test\\S1_10.npz",
+    "sha256": "1fbf459de8ef6ab4ad9dcb201661d3a135439f476746d52f86ec8ac4e36a519d",
+    "gain_sha256": "5d3c4f0fb03d152b7d7145d29cf7e859ae4028584bc5df188ecc29a8635ac016"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 11,
+    "wireless_seed": 911010011,
+    "task_seed": 1011010011,
+    "path": "instances\\frozen_test\\S1_11.npz",
+    "sha256": "b660c1fbda0132828fb2dc48d565d5e85bdb675b62927a4f2d80f63858b4b33e",
+    "gain_sha256": "571c7fbc3046eddea73673f8e50ab637e9d17d9e2cd5a676e8a6c887c3ef16c5"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 12,
+    "wireless_seed": 911010012,
+    "task_seed": 1011010012,
+    "path": "instances\\frozen_test\\S1_12.npz",
+    "sha256": "d9375afb9b655b82a994e7a5da7e55b1207cf8c387fd47cf3f5c0f12dac55f86",
+    "gain_sha256": "0290b4c217c107e3513960cf39ecd32aeda404bdea5412068233eff3b060bf67"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 13,
+    "wireless_seed": 911010013,
+    "task_seed": 1011010013,
+    "path": "instances\\frozen_test\\S1_13.npz",
+    "sha256": "a1811690f2f6ca5a2e9fbf38044bb6152a6e2f81fbd55c93f2db11a9288bf7e4",
+    "gain_sha256": "7ae4eca082882b28b72602ef04fe32a2e09b25791854a70a396e0257628c7d38"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 14,
+    "wireless_seed": 911010014,
+    "task_seed": 1011010014,
+    "path": "instances\\frozen_test\\S1_14.npz",
+    "sha256": "6cf3c6f3d1149b565aaca6ccaa334d9b73ce175140e55e5ac81f5583deb78895",
+    "gain_sha256": "0cb8b55727089c580e00ebb80ec8341891e6483e16349c9ce22e3f847d6a2819"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 15,
+    "wireless_seed": 911010015,
+    "task_seed": 1011010015,
+    "path": "instances\\frozen_test\\S1_15.npz",
+    "sha256": "3cbb8988ae9883269e19c9d4d8cedd4059aaa944ea6b58cca2ce715c3a436c5b",
+    "gain_sha256": "79401eb8d1d7683b9515d9ca3a6ac773aa7ed31f1479d675b399962a6c8e415f"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 16,
+    "wireless_seed": 911010016,
+    "task_seed": 1011010016,
+    "path": "instances\\frozen_test\\S1_16.npz",
+    "sha256": "e1f4a60545b6f7a079e8298b5eeeebe07a926c2705b66134fd2671d64c158f7a",
+    "gain_sha256": "2e6e3137f03bc102bd91b7c36bb7e69bbf1c24aafa90c0a426186782789d3c36"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 17,
+    "wireless_seed": 911010017,
+    "task_seed": 1011010017,
+    "path": "instances\\frozen_test\\S1_17.npz",
+    "sha256": "78696c4881f8ea4d2db33f3b55f64915a7763d781f313fb07731e932eabf9592",
+    "gain_sha256": "6bc666d82ab58292e3dec4e7f73e88bc99e7941fef79e82558e92e6f08e20c1a"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 18,
+    "wireless_seed": 911010018,
+    "task_seed": 1011010018,
+    "path": "instances\\frozen_test\\S1_18.npz",
+    "sha256": "9a362d2eaa3092095a48be2d69e97797131a4c37540929bf8d27f27bf2964bd3",
+    "gain_sha256": "78d3d90784eff006536e49aa6c7e48549fbf89dd7e48987a612a68d4242c7cbe"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S1",
+    "run": 19,
+    "wireless_seed": 911010019,
+    "task_seed": 1011010019,
+    "path": "instances\\frozen_test\\S1_19.npz",
+    "sha256": "7f0a5e2490b9af445be913943655f93e05cc2a1175e8c198b0c7ad981a561374",
+    "gain_sha256": "cef179e3b3cdb71f4dfa0f4c411b4f23c7e5b705fe79ebfff7f1a117ded2bcf8"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 0,
+    "wireless_seed": 911020000,
+    "task_seed": 1011020000,
+    "path": "instances\\frozen_test\\S2_00.npz",
+    "sha256": "208cbc4023149f8c6f81c8d73fa2004ab58569a4c16dd0269766dcb96f254758",
+    "gain_sha256": "2983b065d71371ef0db9f2d84c810e6808fd9ce7847603cb1c5e93647a8766ea"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 1,
+    "wireless_seed": 911020001,
+    "task_seed": 1011020001,
+    "path": "instances\\frozen_test\\S2_01.npz",
+    "sha256": "269c26d2540eb4db8c98ce35d63a7fee62056f7f0b4b7dccd80d0f929cf6dae3",
+    "gain_sha256": "526887db0c445b055fd4081f3fbba03b7e85d3820934114e9e6c8d789762f742"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 2,
+    "wireless_seed": 911020002,
+    "task_seed": 1011020002,
+    "path": "instances\\frozen_test\\S2_02.npz",
+    "sha256": "e7422c4ef54dc1d11675159c3ef7925020400c5810f2078a1e6ef15ffd1720ad",
+    "gain_sha256": "87018df5177590d269e4cae4fe4e1829da705d909ec31010e903b665d5c19503"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 3,
+    "wireless_seed": 911020003,
+    "task_seed": 1011020003,
+    "path": "instances\\frozen_test\\S2_03.npz",
+    "sha256": "03fec451f378c4a0b9bf83e175b0f9c3629472f6285eb50dad46b3c3c3f151cc",
+    "gain_sha256": "e98551ddb964c83f477644bd0bdebc296ba9e651455adbc20d1201bfdcea6172"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 4,
+    "wireless_seed": 911020004,
+    "task_seed": 1011020004,
+    "path": "instances\\frozen_test\\S2_04.npz",
+    "sha256": "fb22daf2e4f620784aac4e70175db2b3278e91873252ad3eedb6f2067d28af34",
+    "gain_sha256": "fbb92d59fd9e7e841e44f99f13c29b009b7648b88cc9e9aeeb7146dd1c3120f8"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 5,
+    "wireless_seed": 911020005,
+    "task_seed": 1011020005,
+    "path": "instances\\frozen_test\\S2_05.npz",
+    "sha256": "9030c1311a4a63631bc691fb7dc71a5755bf1440450be37e911a43827e8931d2",
+    "gain_sha256": "8361170b892a9ba5aec16446473c86fcfa7b976fa4bf7612495f2666f5354a7d"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 6,
+    "wireless_seed": 911020006,
+    "task_seed": 1011020006,
+    "path": "instances\\frozen_test\\S2_06.npz",
+    "sha256": "f09dc28ca1ac813379a9a69326f9c74982584500f9d55877432c53135dc8cdde",
+    "gain_sha256": "fc9a4e2fcaaa3c80252d7ec8d2d32538829aeec9531839ad75eaf43ff3cae502"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 7,
+    "wireless_seed": 911020007,
+    "task_seed": 1011020007,
+    "path": "instances\\frozen_test\\S2_07.npz",
+    "sha256": "5d83ce572c03ef24dc895a6ef1015155257fbbf7bd88ed695b4ab87cbb84ab67",
+    "gain_sha256": "5de6b23b015666a8be065a1b7200895848a29156f0ebb62b94a89d6d5cb4acab"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 8,
+    "wireless_seed": 911020008,
+    "task_seed": 1011020008,
+    "path": "instances\\frozen_test\\S2_08.npz",
+    "sha256": "1f75655295d421e13e9628069f96c7edad736c1707b20b09ecc5cc69f44b795f",
+    "gain_sha256": "7c2dfc0cc78f8bed07a1813f712238374fd9f63156b6a4c048a40f99e1ede6b5"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 9,
+    "wireless_seed": 911020009,
+    "task_seed": 1011020009,
+    "path": "instances\\frozen_test\\S2_09.npz",
+    "sha256": "4cc8b11dd4c178167a02e1a074afff3bb644ae98d70a34bc8609fde30ed41950",
+    "gain_sha256": "5d14609cd413131e1ccacb7a82b87719d879b9e2855ed6bf915120abab0b96d3"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 10,
+    "wireless_seed": 911020010,
+    "task_seed": 1011020010,
+    "path": "instances\\frozen_test\\S2_10.npz",
+    "sha256": "039bcc4bd29c947cb50d840c156464f591275d0768146aa0adf43ddb9b04f012",
+    "gain_sha256": "3ea7383453e5c2f8682f22efdbeece57568de2477c3f0639d9935e800358bd14"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 11,
+    "wireless_seed": 911020011,
+    "task_seed": 1011020011,
+    "path": "instances\\frozen_test\\S2_11.npz",
+    "sha256": "0a472d62a058702017497f5c52ce17f53aea7f9fd1eb11c2e24c4aad9c2d848b",
+    "gain_sha256": "574426ccda49a8d4ef7020a81dd1e9c1af719142882f2f930eba2657353a37ba"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 12,
+    "wireless_seed": 911020012,
+    "task_seed": 1011020012,
+    "path": "instances\\frozen_test\\S2_12.npz",
+    "sha256": "ff3ddacd5d6093fc238289250f54897f5ec7e7ff079e215117899f3cc34e5d94",
+    "gain_sha256": "bdaa8c95e924ef4e9248756dad69806ef3d32c84a2d77c69d0d882acb297d10d"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 13,
+    "wireless_seed": 911020013,
+    "task_seed": 1011020013,
+    "path": "instances\\frozen_test\\S2_13.npz",
+    "sha256": "903e6c452010e17fa96b62251efbce606ca29238862db5c6db545ffc13f7d3cb",
+    "gain_sha256": "6cc767569601ed8d90a10befd0b05db935a4d01acd8a999b2a8f95d83994145d"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 14,
+    "wireless_seed": 911020014,
+    "task_seed": 1011020014,
+    "path": "instances\\frozen_test\\S2_14.npz",
+    "sha256": "34396a6622908671d2c16b75ce9e2c67f56fb69759b3587e5a4e01590a340ec4",
+    "gain_sha256": "2ea00a0e6e2383d6d45d88c4a1a8666747a8b30b658050dd134547784c049f69"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 15,
+    "wireless_seed": 911020015,
+    "task_seed": 1011020015,
+    "path": "instances\\frozen_test\\S2_15.npz",
+    "sha256": "2682a3ad156a1bd5630b1471d7ca54e37863770aadd83544a0be08acc06413e4",
+    "gain_sha256": "ecdbe389119b6480338d18a9f366d06a7f762c715c8c92f2235079ce7309aef9"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 16,
+    "wireless_seed": 911020016,
+    "task_seed": 1011020016,
+    "path": "instances\\frozen_test\\S2_16.npz",
+    "sha256": "07b1ce781dab6dbea3ead750e881f1298b70c1b7578317c6fd96546db47cc7ac",
+    "gain_sha256": "ac6d5fa9c583ac8dcd906217a1b8da42e3e05d18e98e394a56a15511e0c05da5"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 17,
+    "wireless_seed": 911020017,
+    "task_seed": 1011020017,
+    "path": "instances\\frozen_test\\S2_17.npz",
+    "sha256": "4430e836ec74961fc56f2155fdb505d1a5ba3e5b1bbf5cfb4cc99a6212235f11",
+    "gain_sha256": "b5a2ab99504862d378149261e0119ae1f3211f86d778d154facb42e7727c6ca2"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 18,
+    "wireless_seed": 911020018,
+    "task_seed": 1011020018,
+    "path": "instances\\frozen_test\\S2_18.npz",
+    "sha256": "30da2bcc564c26429fcae5381394bd514a27420d896911f8b785263a3b2b59ce",
+    "gain_sha256": "9639673d47cc850bdf0f11ddd90bfd85d0db4162f63e15add9df8c736cb9f179"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S2",
+    "run": 19,
+    "wireless_seed": 911020019,
+    "task_seed": 1011020019,
+    "path": "instances\\frozen_test\\S2_19.npz",
+    "sha256": "00fa08cd141a9862dfd1dee2e2c12d19eb19d80f7c30524dca5b54776ecf180e",
+    "gain_sha256": "6747d9502724c8cf0d0746d5ee62b7d495e18305c23eadcd41a934b481ffe414"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 0,
+    "wireless_seed": 911030000,
+    "task_seed": 1011030000,
+    "path": "instances\\frozen_test\\S3_00.npz",
+    "sha256": "8138bc303a72db693c7718609697fb442f502c1eb31ca17f7764d40ec1d8a493",
+    "gain_sha256": "ccada3e8789a38a26de4d9836089fa2720089579846ba9655f4ef656952322d3"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 1,
+    "wireless_seed": 911030001,
+    "task_seed": 1011030001,
+    "path": "instances\\frozen_test\\S3_01.npz",
+    "sha256": "d5ac0766d641a47dab7abb69b080d2b5751a64c0cfd4d85db68c31c0554c59d1",
+    "gain_sha256": "a2e11ea1444f10afab8c34cfb94c251a51fd125690e98085544962d4e4383cc9"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 2,
+    "wireless_seed": 911030002,
+    "task_seed": 1011030002,
+    "path": "instances\\frozen_test\\S3_02.npz",
+    "sha256": "f09e83a8104025b09a3265e940cbb809aab33f69efbec61d1f0fbab0ac18d4d4",
+    "gain_sha256": "dd891efde835115d6fbddf082269303a8fbfdcea85fd39f646e4adcdc5ba9817"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 3,
+    "wireless_seed": 911030003,
+    "task_seed": 1011030003,
+    "path": "instances\\frozen_test\\S3_03.npz",
+    "sha256": "f213cda0ffe0a33f3d3e8654825d2e8c31dbe7f026aabfca582486cf9da03977",
+    "gain_sha256": "bc8a9c398f63abe724bce016ea6c85742e370a18587684838889831ddfbab2fe"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 4,
+    "wireless_seed": 911030004,
+    "task_seed": 1011030004,
+    "path": "instances\\frozen_test\\S3_04.npz",
+    "sha256": "93ad7e042eaa05c6bba9436ff2ec0a0909f96a913062651e1776fb8a3c998e69",
+    "gain_sha256": "1928dc703fdf3ebfa80bf103afac4e2a4bef492d632cf35cc0d858cc86392a1e"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 5,
+    "wireless_seed": 911030005,
+    "task_seed": 1011030005,
+    "path": "instances\\frozen_test\\S3_05.npz",
+    "sha256": "d78a10d247d4a6d105a268f4582f2e5f6af0c8ddc32be623f4440bbb36012788",
+    "gain_sha256": "e82954137791e0724b6b43a8b2678f8946cca184c272da08a233f6710f99e996"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 6,
+    "wireless_seed": 911030006,
+    "task_seed": 1011030006,
+    "path": "instances\\frozen_test\\S3_06.npz",
+    "sha256": "2f7a85780e2e4083782ec560ce8377bb5ac43d132b5bcb617c079ea95c881209",
+    "gain_sha256": "7374eb68ba682a4f9641e4c32055dc83fde64d4e1ae8dd8c51584d94b3f8e5ea"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 7,
+    "wireless_seed": 911030007,
+    "task_seed": 1011030007,
+    "path": "instances\\frozen_test\\S3_07.npz",
+    "sha256": "1261e18ef4bebc0fa0fa3f11d548178d6dca592012b4576cfcb7b23fb006786a",
+    "gain_sha256": "0703c533f15be35675339bb470be78ee1e62fb696f811119654f678c897a3d4c"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 8,
+    "wireless_seed": 911030008,
+    "task_seed": 1011030008,
+    "path": "instances\\frozen_test\\S3_08.npz",
+    "sha256": "41e5dcc3c30bc27f8755606025a1e08e30a943ecbe6d48c58c71f5d80091af31",
+    "gain_sha256": "82fe675d792539c33c23c49599eaf9e4289c6cb6e4054774a9939a9199408489"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 9,
+    "wireless_seed": 911030009,
+    "task_seed": 1011030009,
+    "path": "instances\\frozen_test\\S3_09.npz",
+    "sha256": "130e42c4724ec9b907b5f05127ec8f47712cdfaa12dfa1dbe8727e784c1e770e",
+    "gain_sha256": "70d27c9b589aaaa795c2087da5b5752ba08b2d301bad4d581bb3a59f3a87a466"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 10,
+    "wireless_seed": 911030010,
+    "task_seed": 1011030010,
+    "path": "instances\\frozen_test\\S3_10.npz",
+    "sha256": "c73c5aa99b1f52a1ee159e011866322c6114dafa7d29f30339b96fad87071833",
+    "gain_sha256": "5392754785fe7adcf1d02fe382df70238598b27eba33dd5d980a699bcf5f326a"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 11,
+    "wireless_seed": 911030011,
+    "task_seed": 1011030011,
+    "path": "instances\\frozen_test\\S3_11.npz",
+    "sha256": "e65a45bdd49120d110e5d98d7c1b069ddbe71e1bb5a888cd802fb2b4080842ca",
+    "gain_sha256": "ed0652f3e4a04d677d8ab89bd3275b79e16f12d7e9f5c89077aba9fa331a68e9"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 12,
+    "wireless_seed": 911030012,
+    "task_seed": 1011030012,
+    "path": "instances\\frozen_test\\S3_12.npz",
+    "sha256": "bcc35d5893b1e4538307ffe54d57fb708fa8f03a9fbfe4a03ff9f64b81dad34d",
+    "gain_sha256": "ef8cc150e54156dd5cf446a87d38b468772ad9613e06012f0f0498fcd3119465"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 13,
+    "wireless_seed": 911030013,
+    "task_seed": 1011030013,
+    "path": "instances\\frozen_test\\S3_13.npz",
+    "sha256": "7ba91614b418d3db830a41fc9390a79b5aae536aeab6c8ecb07c0fe2eb5959f0",
+    "gain_sha256": "1a4f19c55219925accd11367ce97882b099caf70948b1d121ba009b397b4d5a6"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 14,
+    "wireless_seed": 911030014,
+    "task_seed": 1011030014,
+    "path": "instances\\frozen_test\\S3_14.npz",
+    "sha256": "9822c7d2fb8332c1ebfcb471b09749653fbb1e2c817a329918cfa6e9fafc3278",
+    "gain_sha256": "cf4f1d7a5039c8979f7dcb9f26acc3f0b48b5e50281e077ef14bf22dd702aaca"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 15,
+    "wireless_seed": 911030015,
+    "task_seed": 1011030015,
+    "path": "instances\\frozen_test\\S3_15.npz",
+    "sha256": "4a0cabfbba4203e2cf1b12bcb9c92e49c8472b65a1a62e6bc7d051fad363895a",
+    "gain_sha256": "7f90a82dd409a082b5bb37acb842b56f7b6741fc67f2324a25a17b8f9fb8d763"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 16,
+    "wireless_seed": 911030016,
+    "task_seed": 1011030016,
+    "path": "instances\\frozen_test\\S3_16.npz",
+    "sha256": "a1228454b9eb078a83bfe59c11c8df886a3b2e9db121ad55c2d074a254105304",
+    "gain_sha256": "20665f472a269bcc76e794e74fc472b72a498b75647b5b7b48540d9ea713ce98"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 17,
+    "wireless_seed": 911030017,
+    "task_seed": 1011030017,
+    "path": "instances\\frozen_test\\S3_17.npz",
+    "sha256": "4f103e9a33374232c80ac91f037d7b0e41c1d6adeba683bf5f7ab82ab9e2a082",
+    "gain_sha256": "1a2b7e062e584790dbd572b35e0fa5d08063d335a350bed728f0eb364d21728d"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 18,
+    "wireless_seed": 911030018,
+    "task_seed": 1011030018,
+    "path": "instances\\frozen_test\\S3_18.npz",
+    "sha256": "6285adb936974ebcb9656c0943c2ef584702ac8f1670fd2ed24dc95a240bd25f",
+    "gain_sha256": "e709104005f085b02defd5fb264f619651f4fe3e4d857675841327a7fb7c5bbe"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S3",
+    "run": 19,
+    "wireless_seed": 911030019,
+    "task_seed": 1011030019,
+    "path": "instances\\frozen_test\\S3_19.npz",
+    "sha256": "f98a580d5594bfed506205281dd4f4fbfac9f4e91d3bf7656065c7844e369181",
+    "gain_sha256": "d0f02ae4cae2a9a381c530127c5ab003a2f5b169e82689dff2d71d1ddbe1718b"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 0,
+    "wireless_seed": 911040000,
+    "task_seed": 1011040000,
+    "path": "instances\\frozen_test\\S4_00.npz",
+    "sha256": "171ffeb24243e09719f02a8ab5672db320e969fb0487fc542dff2f0bf9b8f9e4",
+    "gain_sha256": "6a78f5f9ecb726078dbe8ee1f6e183d2e7def02aae7e29b75da1f5c1b5f351db"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 1,
+    "wireless_seed": 911040001,
+    "task_seed": 1011040001,
+    "path": "instances\\frozen_test\\S4_01.npz",
+    "sha256": "cdee10ec189ff2dcc18b4fbfef2ca74850d13c3bbefe95d6e505e82773db483e",
+    "gain_sha256": "5150aaf4a8c457477c764a56529a64df202ed3560546cec787392857f8786cbc"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 2,
+    "wireless_seed": 911040002,
+    "task_seed": 1011040002,
+    "path": "instances\\frozen_test\\S4_02.npz",
+    "sha256": "f79b85c87441e64feb16a13ba5c08633b55748e28c8e539234655b8f237f643e",
+    "gain_sha256": "bb075019aa6c004673ae0b31e7678c7c9f60195b0fa3919f8d2fcd0584ecb740"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 3,
+    "wireless_seed": 911040003,
+    "task_seed": 1011040003,
+    "path": "instances\\frozen_test\\S4_03.npz",
+    "sha256": "ab61159cd36523c4e7d7870250568e01f8ca17ad3701ed1af51ab5a875b7d4dc",
+    "gain_sha256": "094feae51d1d9506fb634b5bde0c30988566145a2c51b775f38231b460b4c2f0"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 4,
+    "wireless_seed": 911040004,
+    "task_seed": 1011040004,
+    "path": "instances\\frozen_test\\S4_04.npz",
+    "sha256": "1b46be9e95d026aa9f9a1dbde8d109c4518b7353583085578b1de4dd8809b93e",
+    "gain_sha256": "570d0ab28f2ba4fe723d77ba32ed70f7ff34861b3d6877b00354ba3aa5dd3e50"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 5,
+    "wireless_seed": 911040005,
+    "task_seed": 1011040005,
+    "path": "instances\\frozen_test\\S4_05.npz",
+    "sha256": "51d5845834092d1ed4a8027551931ac26786ad0f0694b6f8c1150822d66a0fb6",
+    "gain_sha256": "21a292d383a66064c7d333acb5d4b11f77044833eca04aaf78db7926bc9d4438"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 6,
+    "wireless_seed": 911040006,
+    "task_seed": 1011040006,
+    "path": "instances\\frozen_test\\S4_06.npz",
+    "sha256": "f97b6783281b3ca49de0d2179d6a7b8c318300bf87e08f7edb8f67fc41d29991",
+    "gain_sha256": "110764089643c7f32290549f0cc75fe6b3c8abe563cac5ea8519b76503d4b65b"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 7,
+    "wireless_seed": 911040007,
+    "task_seed": 1011040007,
+    "path": "instances\\frozen_test\\S4_07.npz",
+    "sha256": "170e6dab46e8a963250cc46df50e0ead046adb9b1a072ce74c592c4fded35e48",
+    "gain_sha256": "8bc4187420c3238bc6d1051d51ee9ae7fd7390bf8c84bd2584c34d578194f776"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 8,
+    "wireless_seed": 911040008,
+    "task_seed": 1011040008,
+    "path": "instances\\frozen_test\\S4_08.npz",
+    "sha256": "c1b5b9711d735b5bec033383e4a3100e15551a8a145f0819b07df92485a9fffc",
+    "gain_sha256": "98685198cfc226d84654e3fcc331e5d4b496b48a239c192f592fda7a3277a2e0"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 9,
+    "wireless_seed": 911040009,
+    "task_seed": 1011040009,
+    "path": "instances\\frozen_test\\S4_09.npz",
+    "sha256": "1430fd3cb22332345806c9dac4c10cc8213d2d249b109914bcf9046f3bd9d554",
+    "gain_sha256": "702a418aa3bc832f047464e6ea71ceba28faa871de86c762234de29d1d8f0e26"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 10,
+    "wireless_seed": 911040010,
+    "task_seed": 1011040010,
+    "path": "instances\\frozen_test\\S4_10.npz",
+    "sha256": "226463e8de46485d78f64722207a28090ee41df399cc9084058d84473e425ec4",
+    "gain_sha256": "d44a0eed0bf1b08efc06c02efa3bba4e50d46415622320bef1f6abf17681c940"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 11,
+    "wireless_seed": 911040011,
+    "task_seed": 1011040011,
+    "path": "instances\\frozen_test\\S4_11.npz",
+    "sha256": "9f89cfd7e3552a38dcf9279c8260f59413ea41cf006550fc510b4b914a4473fc",
+    "gain_sha256": "536fad772fc53c31a3f39308eb6c4bfc46406d526c288d64e3a3086efdc38fd4"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 12,
+    "wireless_seed": 911040012,
+    "task_seed": 1011040012,
+    "path": "instances\\frozen_test\\S4_12.npz",
+    "sha256": "ee4ada86ec0fdbe260ab99785bc0190362671a06cdc80911296075eed15dbc6d",
+    "gain_sha256": "d6818b6699b52166c034a043aa0b2e5f5a16b928b1400b851df4c89c456077c9"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 13,
+    "wireless_seed": 911040013,
+    "task_seed": 1011040013,
+    "path": "instances\\frozen_test\\S4_13.npz",
+    "sha256": "16e7ab6fb8b02a10c7b8de96020d15e127b1469ea46deddd95ff4efe3b576027",
+    "gain_sha256": "8b0b810409e247030284f730e5c6b0a89aec1377f7230e964f4e3db1c0794e7f"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 14,
+    "wireless_seed": 911040014,
+    "task_seed": 1011040014,
+    "path": "instances\\frozen_test\\S4_14.npz",
+    "sha256": "8d360c2daf0f2f5569e4f479ae562101213028d48239bc9f0dd172d4df9d013b",
+    "gain_sha256": "21f10ea21e9d50c2c09b39dfcfad74032ccd6598f93cdb799047ae7c457383f7"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 15,
+    "wireless_seed": 911040015,
+    "task_seed": 1011040015,
+    "path": "instances\\frozen_test\\S4_15.npz",
+    "sha256": "124d6e70664a2696c22cad61a9aa35256f1d86e217a20933f2a1db362aed15d5",
+    "gain_sha256": "ecb4d50965f5d21c1343b1957e8bef3828bfa3ddcf6b597f2184253a63d2a4dc"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 16,
+    "wireless_seed": 911040016,
+    "task_seed": 1011040016,
+    "path": "instances\\frozen_test\\S4_16.npz",
+    "sha256": "566b776ee2282869eef6b8ee6b3a82d3ca79d2de42fd1bde2ae7878884639556",
+    "gain_sha256": "1658954a660e3aa68acb73fc58a3e8e517550077d01d347cb5e17780b0407b51"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 17,
+    "wireless_seed": 911040017,
+    "task_seed": 1011040017,
+    "path": "instances\\frozen_test\\S4_17.npz",
+    "sha256": "8cbde0cd94b9147ff65c25cb4db8b24bdab65a2ff740c388e03d059c0594b1ac",
+    "gain_sha256": "a728556a319604602bd3a3c27e240dd6b89e8fcde9a421ed394356f1d16309df"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 18,
+    "wireless_seed": 911040018,
+    "task_seed": 1011040018,
+    "path": "instances\\frozen_test\\S4_18.npz",
+    "sha256": "b26019b58f973cd95ec3138cbc6f7ca48ea539647f442a05dd1fb3874dadbe7e",
+    "gain_sha256": "65c2f801e1171057c98749e92120e2882e85a4defd157e1282c68a7f605b385e"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S4",
+    "run": 19,
+    "wireless_seed": 911040019,
+    "task_seed": 1011040019,
+    "path": "instances\\frozen_test\\S4_19.npz",
+    "sha256": "76ae74a5af077384699475334b284eb89fe06e10f78126c006be1d27ee7b2840",
+    "gain_sha256": "29ffd71b337fbe3033623ab88d7065aff17d90f27110eb4ee99a075137c092cc"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 0,
+    "wireless_seed": 911050000,
+    "task_seed": 1011050000,
+    "path": "instances\\frozen_test\\S5_00.npz",
+    "sha256": "f22e46c98e6a723867dc4f4d41e69ab8d10830f1b05496f7efef8efecbc4b395",
+    "gain_sha256": "134e7976a85f6bc30febb8341761904dd8e7246e8c27f13a36c89869ce6d54d6"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 1,
+    "wireless_seed": 911050001,
+    "task_seed": 1011050001,
+    "path": "instances\\frozen_test\\S5_01.npz",
+    "sha256": "7b50fec49dead31826c10a924725774f81c27a11940e61852e04adb2a114ba69",
+    "gain_sha256": "dd72f11410428df1f45a08572f674a7f9deea9ed399ad34ac8d4188b24b380dc"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 2,
+    "wireless_seed": 911050002,
+    "task_seed": 1011050002,
+    "path": "instances\\frozen_test\\S5_02.npz",
+    "sha256": "c6fb75f61ea914320be82bf745a18526bb0af7d3011b3e1d4c09dfa0072c07cf",
+    "gain_sha256": "71931aedcac653cc42e89525d6d7a7bbdf9d19c77ac23c483585a0ef596d260f"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 3,
+    "wireless_seed": 911050003,
+    "task_seed": 1011050003,
+    "path": "instances\\frozen_test\\S5_03.npz",
+    "sha256": "0f3218b9e5a069e3df40d12f781fb233b0c7d62f026ac6d5e151613621062f83",
+    "gain_sha256": "8040ba853c30861c4445e55a116e307cd1358c1ff19e27edfc1e234695124ea0"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 4,
+    "wireless_seed": 911050004,
+    "task_seed": 1011050004,
+    "path": "instances\\frozen_test\\S5_04.npz",
+    "sha256": "7ca6891ee9a60bfe3364a6748c3ec5268492be70917ef0ac0f94ca1d13aa6e5e",
+    "gain_sha256": "0b3da930d2dbe18153453ac56603f1984cd8286f56debfdb5cad080b0635f435"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 5,
+    "wireless_seed": 911050005,
+    "task_seed": 1011050005,
+    "path": "instances\\frozen_test\\S5_05.npz",
+    "sha256": "93e740017f6bb6ae9735f3e292e4251f7702075aa697875fcd04f4d2f7023b47",
+    "gain_sha256": "286901a26c3ea3fe56616738e9649ed59fc65a811bc36a5432ec9ca66f493c4e"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 6,
+    "wireless_seed": 911050006,
+    "task_seed": 1011050006,
+    "path": "instances\\frozen_test\\S5_06.npz",
+    "sha256": "8b82bcf02273cc5fff3e8e76ef0ad4e46538eb0bd83e45fb637acb80ca1897e6",
+    "gain_sha256": "529ac146eabf5c5c256adb9dc2c0be359ca803adbf899ffec7fb14c0d7c45978"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 7,
+    "wireless_seed": 911050007,
+    "task_seed": 1011050007,
+    "path": "instances\\frozen_test\\S5_07.npz",
+    "sha256": "794a093ea3272005eb208eb0731b7ac9a2e30a4da1a80af9519acb97b2c18156",
+    "gain_sha256": "3789ad60173de5d5ebbfdb6b60d1415e6da641f6a917e3d1677f5cf2937988ee"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 8,
+    "wireless_seed": 911050008,
+    "task_seed": 1011050008,
+    "path": "instances\\frozen_test\\S5_08.npz",
+    "sha256": "cd10464195e9cb2b166b460f9960c2f5406c22db9d30e43ceca7bbbb641ce86f",
+    "gain_sha256": "09500360a99c11228bb02fa6a27a09004543610f055d03cef650a6efeda1e441"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 9,
+    "wireless_seed": 911050009,
+    "task_seed": 1011050009,
+    "path": "instances\\frozen_test\\S5_09.npz",
+    "sha256": "3bade8e1786b14c095daa7e0f432399e34934957ed5e1f5ba23b6aca93282a8f",
+    "gain_sha256": "6651051836e459ed2d240bd175864380686334a8376cc256561e163043a781ab"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 10,
+    "wireless_seed": 911050010,
+    "task_seed": 1011050010,
+    "path": "instances\\frozen_test\\S5_10.npz",
+    "sha256": "999f5a40fb30f94b4aab16eeeb87084f754e12e4e8f78ecc9908709290697a8b",
+    "gain_sha256": "d1e6e71300307630a97300a0289ef5927d760d3fa7b854e831fbb947636c1ad6"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 11,
+    "wireless_seed": 911050011,
+    "task_seed": 1011050011,
+    "path": "instances\\frozen_test\\S5_11.npz",
+    "sha256": "a26881e45cc65f0c0298287bbfbaa8abc8507d583e542c0d51a081108294104e",
+    "gain_sha256": "3da88f7c2f94ae0bd6ec197ab40a509c4aa47511996431fa969759e36ae78582"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 12,
+    "wireless_seed": 911050012,
+    "task_seed": 1011050012,
+    "path": "instances\\frozen_test\\S5_12.npz",
+    "sha256": "d33059f03e3e6615b699502d742faee0ea014432643dc7395aa7fb5e5f1d87f4",
+    "gain_sha256": "be255bb6cf1b66e4e9a7188027bf14dd29506c47f62e4d1ee996b990dff48cb1"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 13,
+    "wireless_seed": 911050013,
+    "task_seed": 1011050013,
+    "path": "instances\\frozen_test\\S5_13.npz",
+    "sha256": "d335073ca9a73e12a8ded0edac9330232d9f1b38bb93fca8acb1326e15c7dd65",
+    "gain_sha256": "20f1e071fc703653cc57492b85b225f9633952ce10c2fda5e45fab991cdb8893"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 14,
+    "wireless_seed": 911050014,
+    "task_seed": 1011050014,
+    "path": "instances\\frozen_test\\S5_14.npz",
+    "sha256": "0e3fad35a6580cd0fec0eda139435c4aa9b0de3d2fc771a586bb8b39741e5af2",
+    "gain_sha256": "c973ee475e0491c5ece0100dbd259ffb3c1df3586467b70138bb5ed5bca2025b"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 15,
+    "wireless_seed": 911050015,
+    "task_seed": 1011050015,
+    "path": "instances\\frozen_test\\S5_15.npz",
+    "sha256": "2e550f12851eaa9eab4bcd711e30201c07ae1711762f943e383676a9d6f42ffa",
+    "gain_sha256": "20edbcbf38f0f327d93e87ac79865564587255667c024b1572d96921b78da4f0"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 16,
+    "wireless_seed": 911050016,
+    "task_seed": 1011050016,
+    "path": "instances\\frozen_test\\S5_16.npz",
+    "sha256": "28038d9961281580db8a837a8f1ee4874dde84fc994897ed3259695d2a97874e",
+    "gain_sha256": "19528956f06e234e681d32e9fb97ac60babcd459dc5d805c47c90ba4a28356bd"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 17,
+    "wireless_seed": 911050017,
+    "task_seed": 1011050017,
+    "path": "instances\\frozen_test\\S5_17.npz",
+    "sha256": "9eb30ebe8202a0cfbc64c15be4a697120b6c5fe22bad4f4552ee10e51b6299fb",
+    "gain_sha256": "14c096c10e6db56e5f6d06b94ebc3434b521c869fdc64264f29b3ce81f665ff3"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 18,
+    "wireless_seed": 911050018,
+    "task_seed": 1011050018,
+    "path": "instances\\frozen_test\\S5_18.npz",
+    "sha256": "90e37aa42516e4c00ae5b75ff15dd1760cf0284e26e9f7b280dbb408e2289b67",
+    "gain_sha256": "845e3e692923820d26acd84cd086b1295d41be6fb13924bbc06747e31f029a08"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S5",
+    "run": 19,
+    "wireless_seed": 911050019,
+    "task_seed": 1011050019,
+    "path": "instances\\frozen_test\\S5_19.npz",
+    "sha256": "3091257b07284e3789f330ef5f0a0bdc9020998a14f038c2865820d47fb21172",
+    "gain_sha256": "a41fdeee568b0ce24ed975f2a4877fda490a9515700d61cfdc8b61abf67f5f10"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 0,
+    "wireless_seed": 911060000,
+    "task_seed": 1011060000,
+    "path": "instances\\frozen_test\\S6_00.npz",
+    "sha256": "ca54edcdd8d61c29db0baf6a0e525c1dbd2242df679c984a655770703353b124",
+    "gain_sha256": "a3747d3d8555ddb19d81e012c59d297519b14f162a714fcdb5adf7513db9f9be"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 1,
+    "wireless_seed": 911060001,
+    "task_seed": 1011060001,
+    "path": "instances\\frozen_test\\S6_01.npz",
+    "sha256": "34a7617d545b271b292a28e5425f8124a5c4804913b732d80b4d28909f912757",
+    "gain_sha256": "96eb4835ec646e23ee2a8783f5b7ba1ed190d29111c51d3f226a461b130af1b7"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 2,
+    "wireless_seed": 911060002,
+    "task_seed": 1011060002,
+    "path": "instances\\frozen_test\\S6_02.npz",
+    "sha256": "597b85d72407c06c4d536d0aba8e4b38d6ec02dbe7e873eb7fed1b1a484fac67",
+    "gain_sha256": "f66865cdf04e3bbb7e612727d5181578804b897f3a452c42dde07765ec809dab"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 3,
+    "wireless_seed": 911060003,
+    "task_seed": 1011060003,
+    "path": "instances\\frozen_test\\S6_03.npz",
+    "sha256": "7688a149432d08f971845504413b95fa16090c2c7d9c4adee59c3570d6d40d95",
+    "gain_sha256": "b884669c8380751ab84b570dad47e76d369dce937e4c431ea1eafba1c11b4814"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 4,
+    "wireless_seed": 911060004,
+    "task_seed": 1011060004,
+    "path": "instances\\frozen_test\\S6_04.npz",
+    "sha256": "85a755a46261efe9d67fde1b201a4e9b3f5aa38c4f4e90ebcf277ec0027291b9",
+    "gain_sha256": "76c32688a2bdc38204dd495f1c4897498dea1230b054dda57189c9e012bb2743"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 5,
+    "wireless_seed": 911060005,
+    "task_seed": 1011060005,
+    "path": "instances\\frozen_test\\S6_05.npz",
+    "sha256": "db0b8dc4e6b3144c0b722a20ea156402b5029ef3aa6e87054fcb85f9002bd59b",
+    "gain_sha256": "b81d84aad868e501f035a64adf0e7f1d70e32474ecfaf64a52038fac2952adf9"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 6,
+    "wireless_seed": 911060006,
+    "task_seed": 1011060006,
+    "path": "instances\\frozen_test\\S6_06.npz",
+    "sha256": "b71bf0f94674c3cc1227e63fb7644fc92e51cb571cc2fac38e810bc32b95b89f",
+    "gain_sha256": "9c0515c1b3e93ba9fc6d0af07c4c7b52b0b48b918514af93398d916eed90e076"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 7,
+    "wireless_seed": 911060007,
+    "task_seed": 1011060007,
+    "path": "instances\\frozen_test\\S6_07.npz",
+    "sha256": "5b46cfbfeffc78bdc85992536caf5944e5948e79391e02d3092df8c419ac4fe0",
+    "gain_sha256": "94b20100b9659aead5184bf4962d09f185a577715d4a1cf7784b38a918778452"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 8,
+    "wireless_seed": 911060008,
+    "task_seed": 1011060008,
+    "path": "instances\\frozen_test\\S6_08.npz",
+    "sha256": "2574ec54b2f1ade4b1c2979d7e0db774e4bf79af2ce6fb68ee6d0161e4a605fa",
+    "gain_sha256": "ddf28ae72af5f82225b619d5542aa5842f4c9ee1550003c54a5d376bf7e0dcab"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 9,
+    "wireless_seed": 911060009,
+    "task_seed": 1011060009,
+    "path": "instances\\frozen_test\\S6_09.npz",
+    "sha256": "c3408ac054fb0a7440ddeee70b7cf02be8e9fee0d6dfcb2ebada7d2caa4e30d5",
+    "gain_sha256": "333c4a7732ef6a9614e9095de9c091033aa12e7433059d60fa8732bfcc66c264"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 10,
+    "wireless_seed": 911060010,
+    "task_seed": 1011060010,
+    "path": "instances\\frozen_test\\S6_10.npz",
+    "sha256": "d6a88b09e6effc7d7676fc07fb1a7018af68732ea1d34f3a84663ec17149461e",
+    "gain_sha256": "e283e3fbc399fa13bf4517c1dd208acd3bda3324b18f8b493781ae1ae7f4271d"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 11,
+    "wireless_seed": 911060011,
+    "task_seed": 1011060011,
+    "path": "instances\\frozen_test\\S6_11.npz",
+    "sha256": "792c6229c2092fa36defa1b3296871dff597d2c546f8d6964b3a35f89cb18c62",
+    "gain_sha256": "72a456e5843b0d951f1a448ed77e7ea946084dfde7fc0dee561b4dc1265138f4"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 12,
+    "wireless_seed": 911060012,
+    "task_seed": 1011060012,
+    "path": "instances\\frozen_test\\S6_12.npz",
+    "sha256": "6ef0e0f7995e5a097d22cb633101f427238e6596c99593ab4cc7255f722fbd44",
+    "gain_sha256": "3ec0740c5679b584aa65b6908dfd5bad1c28eacf10b48bfb8ceae2770090913e"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 13,
+    "wireless_seed": 911060013,
+    "task_seed": 1011060013,
+    "path": "instances\\frozen_test\\S6_13.npz",
+    "sha256": "ec3e705627a3b86aa347e282fcf1ffca29eb66a1b474ada1f4d4184188ba591f",
+    "gain_sha256": "8cb85a2e3cef9dfa9cb4684b2c2bd13072d0209b51b029a816ac056e8e8ee155"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 14,
+    "wireless_seed": 911060014,
+    "task_seed": 1011060014,
+    "path": "instances\\frozen_test\\S6_14.npz",
+    "sha256": "3bd70703196d807834d79630f0d902d3ee74c022d7feaf2ed380bf2162da0888",
+    "gain_sha256": "556618e17a9d09cd6b321cae9435bb1e9724c3ed38cad14e1742e7850a10e554"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 15,
+    "wireless_seed": 911060015,
+    "task_seed": 1011060015,
+    "path": "instances\\frozen_test\\S6_15.npz",
+    "sha256": "bb037a61dd86c1bcee3e2949113ffc1e7f659e7ccc7fd4aad1f5fa0981a6e391",
+    "gain_sha256": "6d82a99d5a62e72deaadf20817672cb95c12a033beb3de458ce98ca11a1f6f17"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 16,
+    "wireless_seed": 911060016,
+    "task_seed": 1011060016,
+    "path": "instances\\frozen_test\\S6_16.npz",
+    "sha256": "b7d2b60616c24cb224a9da74572806aa184544fb9f107405426d855ed967cac4",
+    "gain_sha256": "876828290ef1204149c30bb0f8feb00921ca6f839133c77ce1bb72688c2f51fa"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 17,
+    "wireless_seed": 911060017,
+    "task_seed": 1011060017,
+    "path": "instances\\frozen_test\\S6_17.npz",
+    "sha256": "0b307039de9277e2c4b77232835b731a814d5fbe169ebe87d163d2a07969f6b7",
+    "gain_sha256": "2079c5fbdaaee165cc29752df3a05e94bcfa3c666d07776474115ec8dd287dca"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 18,
+    "wireless_seed": 911060018,
+    "task_seed": 1011060018,
+    "path": "instances\\frozen_test\\S6_18.npz",
+    "sha256": "3dd643cc54c9a8100c1160146159e30eda6b78d95142e4989df1e193196f9bc8",
+    "gain_sha256": "d38f06ce80f84bec99a265c158757725cbec8fe56af5f1695befabd23380aa83"
+  },
+  {
+    "suite": "frozen_test",
+    "scenario": "S6",
+    "run": 19,
+    "wireless_seed": 911060019,
+    "task_seed": 1011060019,
+    "path": "instances\\frozen_test\\S6_19.npz",
+    "sha256": "2fee695663d2a54fc80651ec5a44e2e8825f4c492a6252a77bcb98c5154fd5dd",
+    "gain_sha256": "684d039b5b6a27c5b87c7352e8c3afb9ce43cd3cd6e7d4c879aa3183346dc2eb"
+  }
+]

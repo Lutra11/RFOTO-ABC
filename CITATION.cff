@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "RFOTO-ABC: Reliability- and Fairness-Aware Task Offloading and Resource Allocation"
+message: "Please cite this research software. The associated manuscript is in preparation; journal acceptance is not implied."
+type: software
+authors:
+  - name: "YongLu"
+    affiliation: "Minzu University of China"
+    email: "2006153@muc.edu.cn"
+  - name: "Yaohuizhong"
+    affiliation: "Minzu University of China"
+  - name: "Yunfei Liu"
+    affiliation: "Minzu University of China"
+license: MIT
+version: "2.0.0"
+date-released: 2026-09-09
+repository-code: "https://github.com/Lutra11/RFOTO-ABC"
+keywords:
+  - mobile edge computing
+  - task offloading
+  - artificial bee colony
+  - reliability
+  - fairness
