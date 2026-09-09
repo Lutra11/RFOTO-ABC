@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import math
+import os
 import time
 from dataclasses import dataclass, field
 from functools import lru_cache
@@ -14,8 +15,11 @@ import numpy as np
 
 
 ROOT = Path(__file__).resolve().parents[1]
-WIRELESS_ROOT = ROOT / "datasets" / "wireless_channel" / "generated_v1"
-WORKLOAD_PROFILE = ROOT / "datasets" / "processed" / "alibaba_workload_profiles.npz"
+DATASETS_ROOT = Path(
+    os.environ.get("RFOTO_DATASETS_DIR", ROOT.parent / "datasets")
+).expanduser().resolve()
+WIRELESS_ROOT = DATASETS_ROOT / "wireless_channel" / "generated_v1"
+WORKLOAD_PROFILE = DATASETS_ROOT / "processed" / "alibaba_workload_profiles.npz"
 NOISE_PSD_W_HZ = 10.0 ** ((-174.0 + 7.0 - 30.0) / 10.0)
 
 DEFAULT_WEIGHTS = np.asarray([0.25, 0.15, 0.20, 0.25, 0.15], dtype=np.float64)

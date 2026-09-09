@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 import tarfile
 from pathlib import Path
 
@@ -13,6 +14,10 @@ import numpy as np
 
 
 SEED = 20260820
+ROOT = Path(__file__).resolve().parents[1]
+DATASETS_ROOT = Path(
+    os.environ.get("RFOTO_DATASETS_DIR", ROOT.parent / "datasets")
+).expanduser().resolve()
 
 
 def reservoir_append(reservoir, item, seen, limit, rng):
@@ -115,8 +120,7 @@ def main():
     parser.add_argument(
         "--raw-dir",
         type=Path,
-        default=Path(__file__).resolve().parents[1]
-        / "datasets"
+        default=DATASETS_ROOT
         / "compute_workload"
         / "alibaba_cluster_trace_v2018"
         / "raw",
@@ -124,7 +128,7 @@ def main():
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path(__file__).resolve().parents[1] / "datasets" / "processed",
+        default=DATASETS_ROOT / "processed",
     )
     parser.add_argument("--task-sample", type=int, default=100_000)
     parser.add_argument("--usage-sample", type=int, default=100_000)

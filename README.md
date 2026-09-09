@@ -33,6 +33,11 @@ Python 3.12 is recommended. Install dependencies in a virtual environment:
 
 ```bash
 python -m pip install -r requirements.txt
+```
+
+Download the external dataset package first and place it in a `datasets/` directory next to this repository (for this workspace: `C:\RFOTO-ABC\datasets`). See [the dataset setup guide](datasets/DATASET.md). Then run:
+
+```bash
 python tools/validate_release.py
 python experiments/01_comparison.py
 python experiments/02_ablation.py
@@ -54,7 +59,7 @@ Outputs go to ignored `outputs/`, without replacing recorded evidence. See [REPR
 ```text
 algorithm/       Model, resource decoder and comparison optimizers
 experiments/     Four core entry points and immutable revision backend
-datasets/        Processed workload, generated channels and acquisition guide
+datasets/        Dataset download, layout and usage guide only
 datas/           Historical data, revision instances/records, current CSV/Excel
 images/png/      Ten manuscript figures, English labels, 600 dpi
 images/pdf/      Matching vector PDF figures
@@ -62,7 +67,7 @@ tools/           Validation, replay, preprocessing and reporting utilities
 docs/            Paper-to-artifact mapping and reporting boundaries
 ```
 
-Current Excel files use white backgrounds and black text. They export recorded results and documented analyses; CSV/JSON remain the authoritative machine-readable evidence. [The figure index](images/README.md) identifies source data. Raw Alibaba archives and the standards PDF are not redistributed; follow [dataset acquisition instructions](datasets/DATASET.md). The packaged processed inputs suffice for experiment replay.
+Current Excel files use white backgrounds and black text. They export recorded results and documented analyses; CSV/JSON remain the authoritative machine-readable evidence. [The figure index](images/README.md) identifies source data. Dataset files are distributed separately through the link and layout documented in [the dataset setup guide](datasets/DATASET.md); the Git repository intentionally tracks only that guide under `datasets/`.
 
 ## Citation, licensing and assistance
 

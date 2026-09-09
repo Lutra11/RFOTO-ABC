@@ -25,7 +25,14 @@ import revision_algorithms as alg
 OUT = ROOT / "datas" / "revision_20260909"
 OLD = ROOT / "datas" / "raw_results"
 DOC = ROOT.parent / "docs" / "RFOTO-ABC_Telecommunication_Systems_完整论文_中文版.docx"
-GEN = ROOT / "datasets" / "wireless_channel" / "tools" / "generate_wireless_dataset.py"
+GEN = core.DATASETS_ROOT / "wireless_channel" / "tools" / "generate_wireless_dataset.py"
+
+def source_label(path):
+    path = Path(path).resolve()
+    try:
+        return str(path.relative_to(ROOT))
+    except ValueError:
+        return str(Path("datasets") / path.relative_to(core.DATASETS_ROOT))
 
 def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
@@ -57,7 +64,7 @@ def prepare():
     frozen = OUT / "frozen_inputs.json"
     sources = [HERE/"PROTOCOL.md", HERE/"run_revision.py", HERE/"revision_algorithms.py", ROOT/"algorithm"/"rfoto_core.py", ROOT/"algorithm"/"advanced_metaheuristics.py", GEN, core.WORKLOAD_PROFILE]
     historic = {str(p.relative_to(ROOT)): sha(p) for p in sorted(OLD.glob("*.csv"))}
-    payload = {"frozen_at_utc": datetime.now(timezone.utc).isoformat(), "source_sha256": {str(p.relative_to(ROOT)): sha(p) for p in sources}, "historical_sha256": historic, "original_docx_sha256": sha(DOC), "python": sys.version, "numpy": np.__version__, "platform": platform.platform(), "protocol_publicly_registered": False}
+    payload = {"frozen_at_utc": datetime.now(timezone.utc).isoformat(), "source_sha256": {source_label(p): sha(p) for p in sources}, "historical_sha256": historic, "original_docx_sha256": sha(DOC), "python": sys.version, "numpy": np.__version__, "platform": platform.platform(), "protocol_publicly_registered": False}
     if frozen.exists():
         previous = json.loads(frozen.read_text(encoding="utf-8"))
         assert previous["source_sha256"] == payload["source_sha256"], "Frozen source files changed"

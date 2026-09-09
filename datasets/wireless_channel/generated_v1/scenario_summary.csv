@@ -1,9 +1,0 @@
-blocked_fraction,effective_los_fraction,episodes,file,instances,links,mean_q_ref,mean_rho_ref_k3,p05_q_ref,scenario,servers,slots,users
-0.006666666666666667,0.3022222222222222,,C:/RFOTO-ABC/datasets/wireless_channel/generated_v1/static/s0_static.npz,30,900,0.9564940333366394,0.9866200089454651,0.7787874341011047,S0,3,,10
-0.018333333333333333,0.22833333333333333,,C:/RFOTO-ABC/datasets/wireless_channel/generated_v1/static/s1_static.npz,30,1800,0.9241885542869568,0.9717127680778503,0.5514056086540222,S1,3,,20
-0.0548,0.16933333333333334,,C:/RFOTO-ABC/datasets/wireless_channel/generated_v1/static/s2_static.npz,30,7500,0.8024804592132568,0.890073299407959,0.007949982769787312,S2,5,,50
-0.07846666666666667,0.12866666666666668,,C:/RFOTO-ABC/datasets/wireless_channel/generated_v1/static/s3_static.npz,30,15000,0.6838760375976562,0.7954279184341431,6.904395721818446e-09,S3,5,,100
-0.24995833333333334,0.08,,C:/RFOTO-ABC/datasets/wireless_channel/generated_v1/static/s4_static.npz,30,24000,0.4613250195980072,0.563401997089386,0.0,S4,8,,100
-0.11972222222222222,0.07908333333333334,,C:/RFOTO-ABC/datasets/wireless_channel/generated_v1/static/s5_static.npz,30,36000,0.4751945436000824,0.5887241959571838,0.0,S5,8,,150
-0.14921666666666666,0.06538333333333333,,C:/RFOTO-ABC/datasets/wireless_channel/generated_v1/static/s6_static.npz,30,60000,0.38328486680984497,0.48651859164237976,0.0,S6,10,,200
-0.14854,0.06501,3,C:/RFOTO-ABC/datasets/wireless_channel/generated_v1/dynamic/s6_dynamic.npz,,300000,0.378082811832428,0.48020848631858826,0.0,S6-dynamic,10,50,200

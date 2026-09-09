@@ -28,4 +28,5 @@ node_modules/
 research_writing_output/
 *effect_preview*
 *contact_sheet*
-datasets/compute_workload/alibaba_cluster_trace_v2018/raw/*
+datasets/*
+!datasets/DATASET.md

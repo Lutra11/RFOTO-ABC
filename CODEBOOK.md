@@ -28,4 +28,4 @@ All composite objectives are minimized. Raw rates are fractions in [0,1] unless 
 
 The historical `Standard-ABC` label is an adapter and is not interchangeable with the revision `Plain-ABC`. Historical `Max-SINR` uses channel-gain ranking. Historical OOD labels describe observed-state interventions as detailed in `REPRODUCIBILITY.md`. `additional_blockage_probability` in the historical stress CSV is an intervention level controlling probability scaling and channel loss, not a separate unobserved blockage draw.
 
-Input arrays: [workload codebook](datasets/processed/CODEBOOK.md), [channel codebook](datasets/wireless_channel/generated_v1/CODEBOOK.md). Current result mapping: [datas/DATA_DICTIONARY.md](datas/DATA_DICTIONARY.md).
+Input-array locations, provenance and setup are documented in the single [dataset guide](datasets/DATASET.md). Current result mapping: [datas/DATA_DICTIONARY.md](datas/DATA_DICTIONARY.md).

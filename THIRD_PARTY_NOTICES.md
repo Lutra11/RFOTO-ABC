@@ -6,4 +6,4 @@ The MIT license covers project code, not a relicensing of Alibaba data, telecomm
 - 3GPP TR 38.901: https://www.3gpp.org/ftp/Specs/archive/38_series/38.901/ . Generated channels are a documented 3GPP-inspired simulation, not a conformance-certified implementation. The specification PDF is not redistributed.
 - Python dependencies retain their respective package licenses.
 
-Downloaded Alibaba schema/trace documentation under `datasets/compute_workload/` retains upstream attribution. Relative image links in that original documentation refer to the upstream project.
+Alibaba schema/trace documentation and the 3GPP specification are part of the separately distributed dataset package, not this Git repository. They retain their upstream attribution; relative image links in the Alibaba documentation refer to the upstream project. See [the dataset guide](datasets/DATASET.md).

@@ -2,9 +2,9 @@
   "frozen_at_utc": "2026-09-09T06:38:02.010595+00:00",
   "source_sha256": {
     "experiments\\revision_20260909\\PROTOCOL.md": "527ec72c6761f12f1ab43daca4ae4d852f49e4c544154d8596a2d05e28fb9d86",
-    "experiments\\revision_20260909\\run_revision.py": "f03fdd0b709112cb0bbdfc726df4b627b0aff3930ee91558f9157ed9bde2cf2a",
+    "experiments\\revision_20260909\\run_revision.py": "ea345a74fe9d0988017a865f277ba4a331dadcbb380f74e598745759b6f28165",
     "experiments\\revision_20260909\\revision_algorithms.py": "89202de12714b3870c417f34668a96930e0277991ecc1fd53c2d652c5aebe515",
-    "algorithm\\rfoto_core.py": "753f576867de7defcd5aca9408a7dcacdad9e282c4ff1b052b6d22992372f70a",
+    "algorithm\\rfoto_core.py": "15bbc787605f87255e362589774cb5b56005758813acd156d2fc07cef7c3a2e9",
     "algorithm\\advanced_metaheuristics.py": "4b41bf8d897aa9b30c9d4c390788efa6e19e691b1feb5b50d6a1a04674445930",
     "datasets\\wireless_channel\\tools\\generate_wireless_dataset.py": "9b2e10d6145ed56d4afa869982cdc723574d70fe4601e0489800f5872bb40d5e",
     "datasets\\processed\\alibaba_workload_profiles.npz": "3fa1f367419fc8fe2e288159979effa7897b425ab133a6a24fd61937f66d32a6"
@@ -39,5 +39,13 @@
   "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
   "numpy": "2.3.5",
   "platform": "Windows-11-10.0.26200-SP0",
-  "protocol_publicly_registered": false
+  "protocol_publicly_registered": false,
+  "dataset_layout_migration": {
+    "date": "2026-09-10",
+    "reason": "Dataset payload moved outside the Git repository; only path resolution changed.",
+    "previous_source_sha256": {
+      "experiments\\revision_20260909\\run_revision.py": "f03fdd0b709112cb0bbdfc726df4b627b0aff3930ee91558f9157ed9bde2cf2a",
+      "algorithm\\rfoto_core.py": "753f576867de7defcd5aca9408a7dcacdad9e282c4ff1b052b6d22992372f70a"
+    }
+  }
 }

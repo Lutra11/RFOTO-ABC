@@ -5,14 +5,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
-from algorithm.rfoto_core import build_scenario
+from algorithm.rfoto_core import WORKLOAD_PROFILE, build_scenario
 
 def ecdf(a):
     x=np.sort(np.asarray(a,float))
     return x,np.arange(1,len(x)+1)/len(x)
 
 def draw(destination):
-    with np.load(ROOT/'datasets/processed/alibaba_workload_profiles.npz',allow_pickle=False) as d:
+    with np.load(WORKLOAD_PROFILE,allow_pickle=False) as d:
         compute=d['compute_cycles'].astype(float)/1e9
         util=d['machine_cpu_util_percent'].astype(float)
         instances=d['instance_num'].astype(float)

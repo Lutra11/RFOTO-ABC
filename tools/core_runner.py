@@ -3,6 +3,7 @@ from pathlib import Path
 import argparse
 import hashlib
 import json
+import os
 import shutil
 import sys
 from datetime import datetime, timezone
@@ -17,6 +18,9 @@ def verify_frozen():
     for field in ('source_sha256', 'historical_sha256'):
         for relative, expected in frozen[field].items():
             path = ROOT / relative.replace('\\', '/')
+            if relative.replace('\\', '/').startswith('datasets/'):
+                external_root = Path(os.environ.get('RFOTO_DATASETS_DIR', ROOT.parent / 'datasets')).expanduser().resolve()
+                path = external_root / Path(relative.replace('\\', '/')).relative_to('datasets')
             if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
                 raise ValueError(f'Frozen input changed: {relative}')
     for item in json.loads((ARCHIVE / 'instance_manifest.json').read_text()):
