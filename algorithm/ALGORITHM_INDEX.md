@@ -2,8 +2,10 @@
 
 All algorithms are evaluated through the same RFOTO scenario builder, random-key
 representation, feasibility-preserving resource decoder, and objective
-components. This design is intentional: the comparison isolates search behavior
-instead of mixing different encodings or hidden constraint treatments.
+components. Historical initial populations differ for some methods, so this
+shared model alone does not isolate search behavior. The revision supplies
+matched-initialization adapters and fixed-objective interventions, as described
+in `../experiments/revision_20260909/PROTOCOL.md`.
 
 ## Proposed method
 
@@ -16,7 +18,7 @@ instead of mixing different encodings or hidden constraint treatments.
 
 | File | Entry | Role |
 |---|---|---|
-| `standard_abc.py` | `run_standard_abc(...)` | Plain ABC ablation/baseline without RFOTO-specific guidance. |
+| `standard_abc.py` | `run_standard_abc(...)` | Historical Standard-ABC adapter without RFOTO-specific guidance; not the revision Plain-ABC adapter. |
 | `ga.py` | `run_ga(...)` | Genetic algorithm baseline. |
 | `pso.py` | `run_pso(...)` | Particle swarm optimization baseline. |
 | `de.py` | `run_de(...)` | Differential evolution baseline. |
@@ -44,3 +46,12 @@ instead of mixing different encodings or hidden constraint treatments.
 | File | Entry | Role |
 |---|---|---|
 | `registry.py` | `run_algorithm(name, scenario, budget, seed)` | Single algorithm dispatcher used by multi-algorithm experiments. |
+
+## Revision adapters
+
+`../experiments/revision_20260909/revision_algorithms.py` accepts an externally
+supplied initial population for RFOTO-ABC, Plain-ABC, DE-RK and LSHADE-lite.
+It implements the individual risk-sampling, fairness-selection and scout
+interventions. Uniform allocation changes initial decoded resources while
+keeping the raw candidate encoding. Lite and MeABC variants are project
+adapters rather than verified full original-author implementations.
