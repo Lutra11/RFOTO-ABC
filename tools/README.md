@@ -1,7 +1,6 @@
 # Reproduction utilities
 
-- `validate_release.py`: verify frozen inputs, raw records, exact manuscript PDF hashes, PNG previews, and Tables 5–15.
-- `build_tables.py`: rebuild the eleven manuscript-facing CSV tables from recorded evidence without running an optimizer.
+- `validate_release.py`: verify frozen inputs, raw records, exact manuscript PDF hashes, PNG previews, and the Tables 5–15 workbook.
 - `core_runner.py`: summarize or replay the four revision groups on frozen instances.
 - `reanalyze.py`: recompute paired tests and corrected best counts under `outputs/`.
 - `historical_suite.py`, `historical_replay.py`: run the documented historical protocols without overwriting recorded results.

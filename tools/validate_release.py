@@ -1,10 +1,12 @@
-"""Validate recorded evidence, manuscript figures, and exported CSV tables."""
+"""Validate recorded evidence, manuscript figures, and the Excel results workbook."""
 from pathlib import Path
 import csv
 import hashlib
 import json
 import os
 import sys
+import xml.etree.ElementTree as ET
+import zipfile
 import numpy as np
 from PIL import Image
 from core_runner import verify_frozen
@@ -28,6 +30,11 @@ EXPECTED_FIGURES = {
     'Fig12_Scalability': '5d6b098068d76a50e29f20820ec89e1adcbafc7ea063b87ef96ef8a8644af87e',
     'Fig13_Dynamic_Warm_Start': '0ba8c82fe4b6114627b18033a5f3c2348cbd822ce76dca0c37dd5687347dc14a',
 }
+EXPECTED_SHEETS = [
+    'T05 Main', 'T06 Advanced', 'T07 Matched', 'T08 Ablation',
+    'T09 Controlled', 'T10 Sensitivity', 'T11 Temperature',
+    'T12 Transfer', 'T13 New Instances', 'T14 Scalability', 'T15 Dynamic',
+]
 
 def files():
     for folder,dirs,names in os.walk(ROOT):
@@ -66,16 +73,26 @@ def main():
             dpi=im.info.get('dpi',(0,0))
             assert min(dpi)>=(149.0 if name=='Framework' else 599.9)
             figures.append({'name':p.name,'pixels':list(im.size),'dpi':list(dpi)})
-    table_index=json.loads((ROOT/'datas/tables/table_index.json').read_text(encoding='utf-8'))
-    assert [item['table'] for item in table_index]==list(range(5,16))
-    assert len(list((ROOT/'datas/tables').glob('Table*.csv')))==11
+    workbook=ROOT/'datas/RFOTO_ABC_Results.xlsx'
+    with zipfile.ZipFile(workbook) as archive:
+        xml=ET.fromstring(archive.read('xl/workbook.xml'))
+        namespace={'x':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
+        sheet_names=[item.attrib['name'] for item in xml.findall('x:sheets/x:sheet',namespace)]
+        assert sheet_names==EXPECTED_SHEETS
+        visible=[]
+        for name in archive.namelist():
+            if name=='xl/sharedStrings.xml' or name.startswith('xl/worksheets/sheet'):
+                tree=ET.fromstring(archive.read(name))
+                visible.extend(node.text or '' for node in tree.iter() if node.tag.endswith('}t'))
+        text=' '.join(visible).lower()
+        assert 'source:' not in text
     assert len(list((ROOT/'experiments').glob('*.py')))==4
     inventory=list(files())
     for p in inventory:
         assert p.stat().st_size<100*1024*1024, f'Too large for normal GitHub upload: {p}'
     report={'frozen_inputs_verified':True,'historical_csv_verified':24,'revision_records':2040,'fresh_instances':180,
             'core_entry_points':4,'manuscript_figure_pairs':len(figures),'figure_source_hashes_verified':len(figures),
-            'manuscript_data_tables':len(table_index),'release_file_count':len(inventory),
+            'manuscript_data_tables':len(sheet_names),'release_file_count':len(inventory),
             'release_bytes':sum(p.stat().st_size for p in inventory)}
     out=ROOT/'outputs/release_validation.json'; out.parent.mkdir(parents=True,exist_ok=True)
     out.write_text(json.dumps(report,indent=2),encoding='utf-8')

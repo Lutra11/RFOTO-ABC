@@ -11,7 +11,6 @@ Large dataset payloads are distributed separately. Follow [`datasets/DATASET.md`
 | Purpose | Command |
 |---|---|
 | Validate frozen evidence, figures, and manuscript tables | `python tools/validate_release.py` |
-| Rebuild Tables 5–15 from recorded data | `python tools/build_tables.py` |
 | Summarize a core group | `python experiments/01_comparison.py` (or 02–04) |
 | Run a bounded fresh replay | `python experiments/01_comparison.py --rerun --max-jobs 4` |
 | Replay all unique revision jobs | `python tools/core_runner.py --group all --rerun` |

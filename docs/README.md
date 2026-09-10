@@ -22,11 +22,11 @@ The repository publishes the implementation, evidence, numeric tables, and exact
 | Sensitivity/capacity, Figures 8–10, Tables 10–11 | sensitivity, resource-scarcity, and frozen-temperature sources |
 | Applicability/scale/dynamics, Figures 11–14, Tables 12–15 | transfer, new-instance, scaling, and dynamic records |
 
-Tables 1–4 are literature, notation, scenario, and parameter tables. Experimental Tables 5–15 are exported as CSV under `datas/tables/`. The figure filename retains the historical experimental number, while `images/README.md` records the final manuscript number after the framework became Figure 1.
+Tables 1–4 are literature, notation, scenario, and parameter tables. Experimental Tables 5–15 are consolidated in `datas/RFOTO_ABC_Results.xlsx`. The figure filename retains the historical experimental number, while `images/README.md` records the final manuscript number after the framework became Figure 1.
 
 ## Reporting boundaries
 
-- Main-text evidence is separated from full provenance: concise CSV tables support reading, while raw records and frozen instances support audit and replay.
+- Main-text evidence is presented in one Excel workbook, while raw records and frozen instances support validation and replay.
 - Figure 4 uses the author-retained replacement for its first panel. Its relationship to the retained aggregate panels and Table 6 has not been recomputed from a newly supplied sequential record.
 - The dynamic CSV label `Standard-ABC` is corrected to `Cold-RFOTO (alternative seed)` in Figure 14 and Table 15 because that series invoked RFOTO cold-start optimization with another seed. Static `Standard-ABC` results keep their original meaning.
 - Temperature 1.6 is a prespecified RFOTO-ABC configuration test, not a common-decoder comparison across all optimizers.

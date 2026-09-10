@@ -69,7 +69,7 @@ The current English manuscript uses one framework figure and thirteen experiment
 
 ![Prespecified temperature comparison](images/png/Fig08_Prespecified_Temperature.png)
 
-Numerical CSV exports for manuscript Tables 5–15 are under [`datas/tables/`](datas/tables/). Tables 1–4 contain literature, notation, scenario, and parameter information and therefore do not duplicate experimental CSV outputs. Every experimental table links back to its recorded source in [the data dictionary](datas/DATA_DICTIONARY.md).
+Manuscript Tables 5–15 are consolidated in the single Excel workbook [`datas/RFOTO_ABC_Results.xlsx`](datas/RFOTO_ABC_Results.xlsx). Each table has its own worksheet with a white background and black text. Tables 1–4 contain literature, notation, scenario, and parameter information and are not duplicated here.
 
 ## Reproducibility boundaries
 
@@ -82,5 +82,3 @@ Numerical CSV exports for manuscript Tables 5–15 are under [`datas/tables/`](d
 ## Citation and license
 
 See [CITATION.cff](CITATION.cff) for software citation metadata. Project code is released under the MIT License; third-party datasets, standards, and dependencies retain their own terms as described in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-
-OpenAI Codex assisted with translation, language editing, code maintenance, and LaTeX preparation. All scientific claims, data, figures, and final approval remain the authors' responsibility.
