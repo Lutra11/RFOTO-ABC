@@ -22,8 +22,8 @@ RFOTO-ABC jointly selects execution locations, bandwidth shares, and CPU shares.
 
 ```text
 algorithm/       RFOTO-ABC, comparison optimizers, decoder, and model
-experiments/     Four public experiment entry points and revision backend
-datas/           Recorded results, frozen instances, analyses, and Tables 5–15
+experiments/     Four public result-table entry points and experiment code
+datas/           One Excel workbook and 24 historical CSV files
 datasets/        External dataset download and setup guide only
 images/pdf/      Fourteen exact vector figures used by the English manuscript
 images/png/      Matching GitHub previews
@@ -54,12 +54,7 @@ python experiments/03_sensitivity.py
 python experiments/04_generalization.py
 ```
 
-The default experiment commands summarize archived evidence. Fresh replay writes to ignored `outputs/` paths and does not overwrite recorded results:
-
-```bash
-python experiments/01_comparison.py --rerun --max-jobs 4
-python tools/core_runner.py --group all --rerun
-```
+The experiment entry points print the corresponding worksheets from `datas/RFOTO_ABC_Results.xlsx`. Historical protocols can be replayed separately with `tools/historical_replay.py`.
 
 See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for protocols, budgets, statistics, and integrity checks.
 

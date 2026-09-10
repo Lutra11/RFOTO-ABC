@@ -1,18 +1,13 @@
 """Validate recorded evidence, manuscript figures, and the Excel results workbook."""
 from pathlib import Path
-import csv
 import hashlib
 import json
 import os
-import sys
 import xml.etree.ElementTree as ET
 import zipfile
-import numpy as np
 from PIL import Image
-from core_runner import verify_frozen
 
 ROOT=Path(__file__).resolve().parents[1]
-REV=ROOT/'datas/revision_20260909'
 SKIP={'.git','outputs','node_modules','__pycache__','.mplconfig','.venv'}
 EXPECTED_FIGURES = {
     'Framework': '4291ec80db2108cf084b253ba96ea42def49550e39c86b3719a5fc66340b4f11',
@@ -47,21 +42,9 @@ def files():
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 
 def main():
-    verify_frozen()
-    assert sha(REV/'revision_raw.csv')=='d9e1c943ffac3bb67ac27a105a00be981ca7c713e8bacad1435267e20b0e0f63'
-    with (REV/'revision_raw.csv').open(encoding='utf-8-sig',newline='') as stream: rows=list(csv.DictReader(stream))
-    records=list((REV/'run_records').glob('*.json'))
-    assert len(rows)==len(records)==2040
-    assert len(list((REV/'instances').rglob('*.npz')))==180
-    keys=set()
-    for row in rows:
-        key=f"{row['suite']}_{row['scenario']}_{int(row['run']):02d}_{row['budget']}_{row['initialization']}_{row['algorithm']}"
-        assert key not in keys; keys.add(key)
-        d=json.loads((REV/'run_records'/f'{key}.json').read_text())
-        assert abs(float(row['objective'])-d['metrics']['objective'])<1e-12
-        assert int(row['evaluations'])==(1 if row['algorithm']=='Offload-then-Allocate' else int(row['budget']))
-        assert np.all(np.diff(d['trace_objective'])<=1e-12)
-        assert int(row['feasible'])==1
+    historical=list((ROOT/'datas/raw_results').glob('*.csv'))
+    assert len(historical)==24
+    assert not list((ROOT/'datas').rglob('*.json'))
     png_names={p.stem for p in (ROOT/'images/png').glob('*.png')}
     pdf_names={p.stem for p in (ROOT/'images/pdf').glob('*.pdf')}
     assert png_names==pdf_names==set(EXPECTED_FIGURES)
@@ -90,7 +73,7 @@ def main():
     inventory=list(files())
     for p in inventory:
         assert p.stat().st_size<100*1024*1024, f'Too large for normal GitHub upload: {p}'
-    report={'frozen_inputs_verified':True,'historical_csv_verified':24,'revision_records':2040,'fresh_instances':180,
+    report={'historical_csv_verified':len(historical),'datas_json_files':0,
             'core_entry_points':4,'manuscript_figure_pairs':len(figures),'figure_source_hashes_verified':len(figures),
             'manuscript_data_tables':len(sheet_names),'release_file_count':len(inventory),
             'release_bytes':sum(p.stat().st_size for p in inventory)}

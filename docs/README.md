@@ -26,7 +26,7 @@ Tables 1–4 are literature, notation, scenario, and parameter tables. Experimen
 
 ## Reporting boundaries
 
-- Main-text evidence is presented in one Excel workbook, while raw records and frozen instances support validation and replay.
+- Main-text evidence is presented in one Excel workbook, while the retained historical CSV files support validation and historical replay.
 - Figure 4 uses the author-retained replacement for its first panel. Its relationship to the retained aggregate panels and Table 6 has not been recomputed from a newly supplied sequential record.
 - The dynamic CSV label `Standard-ABC` is corrected to `Cold-RFOTO (alternative seed)` in Figure 14 and Table 15 because that series invoked RFOTO cold-start optimization with another seed. Static `Standard-ABC` results keep their original meaning.
 - Temperature 1.6 is a prespecified RFOTO-ABC configuration test, not a common-decoder comparison across all optimizers.

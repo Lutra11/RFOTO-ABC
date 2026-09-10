@@ -22,13 +22,9 @@ wrapper modules make each compared algorithm easy to locate.
 
 Advanced methods share the random-key representation, decoder and objective.
 Historical initialization differs for some methods, so equal budgets alone do
-not isolate search behavior. The new matched-initialization adapters are in
-`../experiments/revision_20260909/revision_algorithms.py` (Plain-ABC, DE-RK,
-LSHADE-lite and one-operation RFOTO interventions). That backend holds the
-initial encoding fixed. Uniform allocation deliberately changes decoded resources.
+not isolate search behavior. The manuscript workbook reports the retained
+matched-initialization and component-intervention results.
 
 The lite and MeABC implementations are documented adapters, not verified full
-original-author implementations. The scientific logic in `rfoto_core.py` and
-`advanced_metaheuristics.py` matches the frozen revision. A documented path-only
-migration lets `rfoto_core.py` load the external sibling dataset directory; the
-previous and current source hashes are retained in `frozen_inputs.json`.
+original-author implementations. A documented path-only migration lets
+`rfoto_core.py` load the external sibling dataset directory.

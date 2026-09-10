@@ -99,12 +99,7 @@ python experiments/03_sensitivity.py
 python experiments/04_generalization.py
 ```
 
-The default experiment commands summarize recorded evidence. To recompute selected frozen experiments:
-
-```powershell
-python experiments/01_comparison.py --rerun --max-jobs 4
-python tools/core_runner.py --group all --rerun
-```
+The default experiment commands print the corresponding result tables from the Excel workbook.
 
 To rebuild the workload pool from the original Alibaba archives:
 

@@ -10,16 +10,13 @@ Large dataset payloads are distributed separately. Follow [`datasets/DATASET.md`
 
 | Purpose | Command |
 |---|---|
-| Validate frozen evidence, figures, and manuscript tables | `python tools/validate_release.py` |
+| Validate figures, workbook structure, historical CSV count, and repository data policy | `python tools/validate_release.py` |
 | Summarize a core group | `python experiments/01_comparison.py` (or 02–04) |
-| Run a bounded fresh replay | `python experiments/01_comparison.py --rerun --max-jobs 4` |
-| Replay all unique revision jobs | `python tools/core_runner.py --group all --rerun` |
-| Recompute statistical summaries | `python tools/reanalyze.py` |
 | Replay a historical group | `python tools/historical_replay.py main` |
 
-Reruns write to ignored `outputs/` paths and do not replace archived evidence or manuscript assets.
+The four experiment entry points read the Excel results workbook. Historical replays write to ignored `outputs/` paths and do not replace manuscript assets.
 
-## Revision protocol
+## Reported revision protocol
 
 - Controlled groups: S2, S4, and S6; 20 fresh instances each; 320 and 1,000 FEs. Greedy initialization has eight methods and random initialization has four.
 - Frozen test: S1–S6; 20 independent instances each; five settings. Searches use 320 FEs and the rule uses one evaluation.
@@ -36,8 +33,8 @@ The rolling experiment contains three independent 50-slot episodes. Episode-leve
 
 ## Integrity and interpretation
 
-- `frozen_inputs.json` protects seven frozen sources/inputs and all 24 historical CSVs; `instance_manifest.json` protects the 180 revision inputs.
-- `tools/validate_release.py` verifies all 2,040 record summaries, figure-set completeness, exact manuscript PDF hashes, PNG preview resolution, and Table 5–15 coverage.
+- `tools/validate_release.py` verifies the 24 retained historical CSVs, confirms that `datas/` contains no JSON files, checks exact manuscript PDF hashes and PNG preview resolution, and validates the Table 5–15 workbook structure.
+- The per-run revision archive and frozen instances are not distributed in this streamlined repository.
 - Historical adapters and lite optimizers are not certified original-author implementations.
 - Common-weight rescoring does not remove the changed-search-objective confound in historical `-F` and `-RF` ablations.
 - Stored negative results and boundary cases remain part of the evidence package.

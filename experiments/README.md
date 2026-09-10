@@ -5,6 +5,6 @@
 3. `03_sensitivity.py`: Section 4.3.3, sensitivity and frozen temperature validation.
 4. `04_generalization.py`: Section 4.3.4, fresh scenarios and applicability boundaries.
 
-Run without arguments to summarize archived records. Add `--rerun` for fresh computation of revision jobs and `--max-jobs N` for a smoke test. Outputs remain separate from recorded data. The shared portable dispatcher is `../tools/core_runner.py`; the immutable original protocol/backend is in `revision_20260909/`.
+Run without arguments to print the corresponding worksheets from `../datas/RFOTO_ABC_Results.xlsx`. The shared dispatcher is `../tools/core_runner.py`.
 
 Historical raw diagnostics remain supplementary evidence rather than additional top-level launchers. See `../REPRODUCIBILITY.md` for historical replay and budgets.

@@ -3,9 +3,7 @@
 All algorithms are evaluated through the same RFOTO scenario builder, random-key
 representation, feasibility-preserving resource decoder, and objective
 components. Historical initial populations differ for some methods, so this
-shared model alone does not isolate search behavior. The revision supplies
-matched-initialization adapters and fixed-objective interventions, as described
-in `../experiments/revision_20260909/PROTOCOL.md`.
+shared model alone does not isolate search behavior.
 
 ## Proposed method
 
@@ -47,11 +45,5 @@ in `../experiments/revision_20260909/PROTOCOL.md`.
 |---|---|---|
 | `registry.py` | `run_algorithm(name, scenario, budget, seed)` | Single algorithm dispatcher used by multi-algorithm experiments. |
 
-## Revision adapters
-
-`../experiments/revision_20260909/revision_algorithms.py` accepts an externally
-supplied initial population for RFOTO-ABC, Plain-ABC, DE-RK and LSHADE-lite.
-It implements the individual risk-sampling, fairness-selection and scout
-interventions. Uniform allocation changes initial decoded resources while
-keeping the raw candidate encoding. Lite and MeABC variants are project
-adapters rather than verified full original-author implementations.
+Lite and MeABC variants are project adapters rather than verified full
+original-author implementations.

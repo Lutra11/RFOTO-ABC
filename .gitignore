@@ -38,3 +38,4 @@ research_writing_output/
 datasets/*
 !datasets/DATASET.md
 datas/release_manifest.json
+datas/**/*.json
