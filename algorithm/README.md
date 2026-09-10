@@ -28,5 +28,7 @@ LSHADE-lite and one-operation RFOTO interventions). That backend holds the
 initial encoding fixed. Uniform allocation deliberately changes decoded resources.
 
 The lite and MeABC implementations are documented adapters, not verified full
-original-author implementations. `rfoto_core.py` and `advanced_metaheuristics.py`
-remain byte-identical to the revision's frozen input hashes.
+original-author implementations. The scientific logic in `rfoto_core.py` and
+`advanced_metaheuristics.py` matches the frozen revision. A documented path-only
+migration lets `rfoto_core.py` load the external sibling dataset directory; the
+previous and current source hashes are retained in `frozen_inputs.json`.

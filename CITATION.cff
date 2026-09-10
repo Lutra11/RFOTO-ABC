@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "RFOTO-ABC: Reliability- and Fairness-Aware Task Offloading and Resource Allocation"
+title: "RFOTO-ABC: Reliability- and fairness-aware task offloading and resource allocation in wireless edge computing"
 message: "Please cite this research software. The associated manuscript is in preparation; journal acceptance is not implied."
 type: software
 authors:
@@ -11,8 +11,8 @@ authors:
   - name: "Yunfei Liu"
     affiliation: "Minzu University of China"
 license: MIT
-version: "2.0.0"
-date-released: 2026-09-09
+version: "2.1.0"
+date-released: 2026-09-10
 repository-code: "https://github.com/Lutra11/RFOTO-ABC"
 keywords:
   - mobile edge computing

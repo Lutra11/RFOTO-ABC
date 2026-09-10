@@ -1,13 +1,10 @@
-"""Validate publication data, figures, white/black workbooks and release hashes."""
+"""Validate recorded evidence, manuscript figures, and exported CSV tables."""
 from pathlib import Path
-import argparse
 import csv
 import hashlib
 import json
 import os
 import sys
-import zipfile
-import xml.etree.ElementTree as ET
 import numpy as np
 from PIL import Image
 from core_runner import verify_frozen
@@ -15,50 +12,34 @@ from core_runner import verify_frozen
 ROOT=Path(__file__).resolve().parents[1]
 REV=ROOT/'datas/revision_20260909'
 SKIP={'.git','outputs','node_modules','__pycache__','.mplconfig','.venv'}
-NS={'s':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
+EXPECTED_FIGURES = {
+    'Framework': '4291ec80db2108cf084b253ba96ea42def49550e39c86b3719a5fc66340b4f11',
+    'Fig01_Workload_Mapping': '1356a2a10f9238d93b4d2530a310d70cbafa62b3b73197ea2ec2cd8d494a8a01',
+    'Fig02_Main_Comparison': '519d09749c5171282861f876d5ab6e92282b1ada1e992f138135d3e574bdfdef',
+    'Fig03_Advanced_Comparison_a_Replaced': 'bbdc183058cd3df6f4263c2b33fc7e49fcb16ce90019ccfa001ca328a239232a',
+    'Fig04_Matched_Initialization': '15bda56914cf1c19891387408ff66ca6e7f163d13b45f13bb345b1c166978f33',
+    'Fig05_Ablation_Single_Panel': '435a09374161ded877df02ac2319400c57bfcab649658c48383d4234c829321a',
+    'Fig06_Controlled_Ablation': '987db6774b44f9c2a5b84c02aa8e8840bc82ed52a7de357ac7f772ef2d1209a5',
+    'Fig07_Parameter_Sensitivity': '92cd17e89dd2d28dfe469a3a6e3b7a8c830614ea25716d45ac2f71f418b4231e',
+    'Fig08_Prespecified_Temperature': 'dfb10d2ec5421b7300242bd1feab8fc87a7b8afcf2e33373bd3722b424e6bae4',
+    'Fig09_Resource_Scarcity': '433c007a53ae21cf94979efb96f2a979706165536da3e579063a5d019c1a7eda',
+    'Fig10_Scenario_Transfer': '1b368b1d446e7d865cf71e17deeb1b4ee417345876e7e5ed67db1568e8fd6e17',
+    'Fig11_Prespecified_Configurations': '7e3980ce8d245be7f64e1796b8ba8d342a20a03653f8cbc38105a35698eecd7b',
+    'Fig12_Scalability': '5d6b098068d76a50e29f20820ec89e1adcbafc7ea063b87ef96ef8a8644af87e',
+    'Fig13_Dynamic_Warm_Start': '0ba8c82fe4b6114627b18033a5f3c2348cbd822ce76dca0c37dd5687347dc14a',
+}
 
 def files():
     for folder,dirs,names in os.walk(ROOT):
         dirs[:]=sorted(d for d in dirs if d not in SKIP)
         for name in sorted(names):
             p=Path(folder)/name
-            if name.endswith(('.pyc','.inspect.ndjson')) or p==ROOT/'datas/release_manifest.json': continue
+            if name.endswith(('.pyc','.inspect.ndjson')): continue
             yield p
 
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 
-def check_workbook(path):
-    with zipfile.ZipFile(path) as z:
-        assert not any('externalLink' in n or 'vbaProject' in n for n in z.namelist())
-        style=ET.fromstring(z.read('xl/styles.xml'))
-        fonts=style.find('s:fonts',NS); fills=style.find('s:fills',NS); xfs=style.find('s:cellXfs',NS)
-        shared=[]
-        if 'xl/sharedStrings.xml' in z.namelist():
-            shared=[''.join(x.itertext()) for x in ET.fromstring(z.read('xl/sharedStrings.xml'))]
-        colored=0; cells=0; sheets=0; errors=[]
-        for name in z.namelist():
-            if not name.startswith('xl/worksheets/sheet') or not name.endswith('.xml'): continue
-            sheets+=1
-            sheet=ET.fromstring(z.read(name))
-            for cell in sheet.findall('.//s:c',NS):
-                xf=xfs[int(cell.get('s','0'))]
-                font=fonts[int(xf.get('fontId','0'))]
-                fill=fills[int(xf.get('fillId','0'))]
-                color=font.find('s:color',NS)
-                pattern=fill.find('s:patternFill',NS)
-                fg=None if pattern is None else pattern.find('s:fgColor',NS)
-                black=color is not None and color.get('rgb','').upper()[-6:]=='000000'
-                white=fg is not None and fg.get('rgb','').upper()[-6:]=='FFFFFF'
-                assert black and white, f'Non-white/black cell: {path.name}/{name}/{cell.get("r")}'
-                if cell.get('t')=='e': errors.append(cell.get('r'))
-                if cell.find('s:v',NS) is not None or cell.find('s:is',NS) is not None: cells+=1
-        assert not errors, f'Excel errors: {errors}'
-        return {'file':path.name,'sheets':sheets,'populated_cells':cells,'white_black_all_styled_cells':True,'excel_errors':len(errors)}
-
 def main():
-    parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--write-manifest',action='store_true')
-    args=parser.parse_args()
     verify_frozen()
     assert sha(REV/'revision_raw.csv')=='d9e1c943ffac3bb67ac27a105a00be981ca7c713e8bacad1435267e20b0e0f63'
     with (REV/'revision_raw.csv').open(encoding='utf-8-sig',newline='') as stream: rows=list(csv.DictReader(stream))
@@ -74,29 +55,28 @@ def main():
         assert int(row['evaluations'])==(1 if row['algorithm']=='Offload-then-Allocate' else int(row['budget']))
         assert np.all(np.diff(d['trace_objective'])<=1e-12)
         assert int(row['feasible'])==1
+    png_names={p.stem for p in (ROOT/'images/png').glob('*.png')}
+    pdf_names={p.stem for p in (ROOT/'images/pdf').glob('*.pdf')}
+    assert png_names==pdf_names==set(EXPECTED_FIGURES)
     figures=[]
-    for p in sorted((ROOT/'images/png').glob('*.png')):
+    for name,expected_hash in EXPECTED_FIGURES.items():
+        p=ROOT/'images/png'/f'{name}.png'
+        assert sha(ROOT/'images/pdf'/f'{name}.pdf')==expected_hash
         with Image.open(p) as im:
-            dpi=im.info.get('dpi',(0,0)); assert min(dpi)>=599.9
+            dpi=im.info.get('dpi',(0,0))
+            assert min(dpi)>=(149.0 if name=='Framework' else 599.9)
             figures.append({'name':p.name,'pixels':list(im.size),'dpi':list(dpi)})
-        assert (ROOT/'images/pdf'/p.with_suffix('.pdf').name).exists()
-    assert len(figures)==10 and len(list((ROOT/'images/pdf').glob('*.pdf')))==10
-    workbooks=[check_workbook(p) for p in sorted((ROOT/'datas/excel').glob('*.xlsx'))]
-    assert len(workbooks)==2 and sorted(x['sheets'] for x in workbooks)==[5,10]
+    table_index=json.loads((ROOT/'datas/tables/table_index.json').read_text(encoding='utf-8'))
+    assert [item['table'] for item in table_index]==list(range(5,16))
+    assert len(list((ROOT/'datas/tables').glob('Table*.csv')))==11
     assert len(list((ROOT/'experiments').glob('*.py')))==4
-    assert len(list((ROOT/'datas/tables').glob('Table*.csv')))==10
-    inventory=[]
-    for p in files():
+    inventory=list(files())
+    for p in inventory:
         assert p.stat().st_size<100*1024*1024, f'Too large for normal GitHub upload: {p}'
-        inventory.append({'path':p.relative_to(ROOT).as_posix(),'bytes':p.stat().st_size,'sha256':sha(p)})
-    manifest=ROOT/'datas/release_manifest.json'
-    if args.write_manifest:
-        manifest.write_text(json.dumps({'release':'2026-09-09','files':inventory},indent=2),encoding='utf-8')
-    elif manifest.exists():
-        saved=json.loads(manifest.read_text())['files']
-        assert saved==inventory, 'Release manifest differs; investigate before refreshing it'
     report={'frozen_inputs_verified':True,'historical_csv_verified':24,'revision_records':2040,'fresh_instances':180,
-            'core_entry_points':4,'figures':figures,'workbooks':workbooks,'release_file_count':len(inventory),'release_bytes':sum(x['bytes'] for x in inventory)}
+            'core_entry_points':4,'manuscript_figure_pairs':len(figures),'figure_source_hashes_verified':len(figures),
+            'manuscript_data_tables':len(table_index),'release_file_count':len(inventory),
+            'release_bytes':sum(p.stat().st_size for p in inventory)}
     out=ROOT/'outputs/release_validation.json'; out.parent.mkdir(parents=True,exist_ok=True)
     out.write_text(json.dumps(report,indent=2),encoding='utf-8')
     print(json.dumps({k:v for k,v in report.items() if k!='figures'},indent=2))

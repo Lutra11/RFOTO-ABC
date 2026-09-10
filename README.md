@@ -1,43 +1,52 @@
 # RFOTO-ABC
 
-Research code and recorded data for reliability- and fairness-aware mobile edge task offloading and resource allocation using artificial bee colony optimization.
+Reliability- and fairness-aware task offloading and resource allocation for wireless edge computing.
 
-This release follows the **9 September 2026 comprehensive Chinese manuscript revision**. Authors: **YongLu, Yaohuizhong, Yunfei Liu**, Minzu University of China. Correspondence: YongLu, 2006153@muc.edu.cn. The manuscript is in preparation; acceptance or publication in Telecommunication Systems is not claimed.
+This repository contains the implementation, recorded experimental evidence, manuscript data tables, and publication figures for the English LaTeX manuscript revised on **10 September 2026**. The manuscript is in preparation; acceptance or publication by *Telecommunication Systems* is not claimed.
 
-## Four core experiments
+![RFOTO-ABC system and solution framework](images/png/Framework.png)
 
-| Paper section | Entry point | Evidence |
+## What the study evaluates
+
+RFOTO-ABC jointly selects execution locations, bandwidth shares, and CPU shares. The model combines finite-retransmission reliability, deadline penalties, terminal energy, and service-utility fairness. The optimizer uses feasible construction, capacity-preserving decoding, reliability-based fallback, and finite-budget artificial bee colony search.
+
+| Main finding | Evidence | Boundary |
 |---|---|---|
-| 4.3.1 Overall performance and finite-budget search | [01_comparison.py](experiments/01_comparison.py) | Historical 11-method comparisons and matched initialization at 320/1000 evaluations |
-| 4.3.2 Components and allocation boundaries | [02_ablation.py](experiments/02_ablation.py) | Historical common-weight rescoring and fixed-objective interventions |
-| 4.3.3 Parameter sensitivity and stability | [03_sensitivity.py](experiments/03_sensitivity.py) | Historical sweep and prespecified temperature 0.8 versus 1.6 test |
-| 4.3.4 Cross-scenario applicability and scale | [04_generalization.py](experiments/04_generalization.py) | Six fresh scenario groups, observed-state stress, scale and dynamic limitations |
+| RFOTO-ABC has the lowest mean objective in four of six main scenarios | 30 runs per scenario in Table 5 and Figure 3 | Two-stage allocation is lower in S2 and S4 |
+| Search improves strong identical initial populations | 20 paired instances in S2, S4, and S6; 320 and 1,000 FEs | The advantage is not universal under fully random initialization |
+| Resource-share concentration materially affects the objective | Equal-share intervention and temperature sensitivity | Allocation changes multiple objective components and is not an isolated optimizer effect |
+| Prespecified temperature 1.6 reduces the paired objective by 6.89–9.38% | Six independent test groups; 20 paired instances per group | Other optimizers were not tested at temperature 1.6 |
+| Warm starts do not show stable benefit in the recorded rolling test | Three independent 50-slot episodes | The dynamic test is small and uses simulated channels |
 
-Overlapping comparisons reuse the same records, not additional independent experiments. All historical raw evidence, including null and reversed results, remains in `datas/raw_results/`. The **2,040 revision records and 180 instances** are in `datas/revision_20260909/`.
+## Repository structure
 
-## Main findings and boundaries
+```text
+algorithm/       RFOTO-ABC, comparison optimizers, decoder, and model
+experiments/     Four public experiment entry points and revision backend
+datas/           Recorded results, frozen instances, analyses, and Tables 5–15
+datasets/        External dataset download and setup guide only
+images/pdf/      Fourteen exact vector figures used by the English manuscript
+images/png/      Matching GitHub previews
+tools/           Validation, replay, table export, and figure regeneration
+docs/            Manuscript-to-repository alignment and reporting boundaries
+```
 
-- The historical advanced comparison has **45 unique best, 2 tied best and 1 non-best** RFOTO-ABC outcomes across 48 paired instances. Current tables replace the obsolete tie-breaking count.
-- Matched greedy initialization supports additional search improvement against LSHADE-lite in some budget/scenario strata. Random initialization does not establish a universal advantage.
-- Fixed-objective ablations do not demonstrate independent benefits for every guidance operation after multiple-comparison correction. Uniform allocation remains an important competing design.
-- Prespecified temperature 1.6 improves the mean objective over 0.8 in all six fresh test groups. Other optimizers were not tested at 1.6, so this is not a decoder-controlled optimizer ranking.
-- Alibaba data-center workload profiles are combined with simulated wireless channels. Fresh generator states are not an external real-world MEC dataset. Warm-start superiority is not established.
+Large dataset payloads are intentionally stored outside Git. Download them from the location in [DATASET.md](datasets/DATASET.md) and place the `datasets/` directory next to this repository. In the author's workspace, the relationship is:
 
-![Matched initialization](images/png/Fig04_Matched_Initialization.png)
+```text
+C:\RFOTO-ABC\
+├── git-content\   # this repository
+└── datasets\      # external data package
+```
 
-![Frozen configuration test](images/png/Fig10_Frozen_Test.png)
+Set `RFOTO_DATASETS_DIR` only when the external data is stored elsewhere.
 
 ## Quick start
 
-Python 3.12 is recommended. Install dependencies in a virtual environment:
+Python 3.12 is recommended.
 
 ```bash
 python -m pip install -r requirements.txt
-```
-
-Download the external dataset package first and place it in a `datasets/` directory next to this repository (for this workspace: `C:\RFOTO-ABC\datasets`). See [the dataset setup guide](datasets/DATASET.md). Then run:
-
-```bash
 python tools/validate_release.py
 python experiments/01_comparison.py
 python experiments/02_ablation.py
@@ -45,32 +54,33 @@ python experiments/03_sensitivity.py
 python experiments/04_generalization.py
 ```
 
-Default commands summarize archived evidence. For fresh computation on the archived inputs:
+The default experiment commands summarize archived evidence. Fresh replay writes to ignored `outputs/` paths and does not overwrite recorded results:
 
 ```bash
 python experiments/01_comparison.py --rerun --max-jobs 4
 python tools/core_runner.py --group all --rerun
 ```
 
-Outputs go to ignored `outputs/`, without replacing recorded evidence. See [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
+See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for protocols, budgets, statistics, and integrity checks.
 
-## Package structure
+## Figures and manuscript data
 
-```text
-algorithm/       Model, resource decoder and comparison optimizers
-experiments/     Four core entry points and immutable revision backend
-datasets/        Dataset download, layout and usage guide only
-datas/           Historical data, revision instances/records, current CSV/Excel
-images/png/      Ten manuscript figures, English labels, 600 dpi
-images/pdf/      Matching vector PDF figures
-tools/           Validation, replay, preprocessing and reporting utilities
-docs/            Paper-to-artifact mapping and reporting boundaries
-```
+The current English manuscript uses one framework figure and thirteen experimental figures. The exact PDFs and matching PNG previews are indexed in [images/README.md](images/README.md). Figure 3 contains the updated main-comparison panel scaling requested on 10 September 2026.
 
-Current Excel files use white backgrounds and black text. They export recorded results and documented analyses; CSV/JSON remain the authoritative machine-readable evidence. [The figure index](images/README.md) identifies source data. Dataset files are distributed separately through the link and layout documented in [the dataset setup guide](datasets/DATASET.md); the Git repository intentionally tracks only that guide under `datasets/`.
+![Prespecified temperature comparison](images/png/Fig08_Prespecified_Temperature.png)
 
-## Citation, licensing and assistance
+Numerical CSV exports for manuscript Tables 5–15 are under [`datas/tables/`](datas/tables/). Tables 1–4 contain literature, notation, scenario, and parameter information and therefore do not duplicate experimental CSV outputs. Every experimental table links back to its recorded source in [the data dictionary](datas/DATA_DICTIONARY.md).
 
-See [CITATION.cff](CITATION.cff). MIT covers project code; third-party data retain their original terms, described in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+## Reproducibility boundaries
 
-OpenAI Codex assisted with parts of the code, statistical reporting, scientific figures and manuscript preparation. Experimental values were produced by executed programs, with raw records retained. This assistance does not replace author verification or responsibility. Internal drafting logs, caches, display-only mockups and temporary authoring files are excluded from this release.
+- Alibaba Cluster Trace v2018 supplies workload-derived profiles; wireless channels are simulated rather than measured MEC traces.
+- Historical and revision experiments use different sample sizes and evaluation budgets. Overlapping summaries do not create additional independent experiments.
+- Several comparison algorithms are documented project adapters, not certified reproductions of their original authors' implementations.
+- The retained advanced-comparison Figure 4 panel and Table 6 aggregates require the source-record reconciliation noted in [docs/README.md](docs/README.md).
+- Funding, competing interests, and individual author contributions remain author-confirmation items in the manuscript.
+
+## Citation and license
+
+See [CITATION.cff](CITATION.cff) for software citation metadata. Project code is released under the MIT License; third-party datasets, standards, and dependencies retain their own terms as described in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+OpenAI Codex assisted with translation, language editing, code maintenance, and LaTeX preparation. All scientific claims, data, figures, and final approval remain the authors' responsibility.

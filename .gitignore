@@ -15,6 +15,13 @@ logs/
 *.log
 *.tmp
 *.bak
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
 *.zip
 *.7z
 *.rar
@@ -30,3 +37,5 @@ research_writing_output/
 *contact_sheet*
 datasets/*
 !datasets/DATASET.md
+datas/excel/
+datas/release_manifest.json

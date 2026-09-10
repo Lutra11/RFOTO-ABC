@@ -1,18 +1,19 @@
-# Result-file mapping
+# Manuscript table mapping
 
-| Current table | Source | Transformation |
-|---|---|---|
-| 7 Main | `raw_results/exp48_main_comparison.csv` | Scenario/method mean objective |
-| 8 Advanced | `revision_20260909/analysis/advanced_corrected_best_counts.csv` | Corrected unique/tied/non-best counts; 48 paired blocks |
-| 9 Matched | `revision_20260909/revision_raw.csv` | Controlled means by scene, budget, initialization and method |
-| 10 Historical ablation | `raw_results/exp414_ablation.csv` | Saved components rescored with (0.25,0.15,0.20,0.25,0.15) |
-| 11 Controlled ablation | `revision_20260909/revision_raw.csv` | Greedy-initialized fixed-objective intervention means |
-| 12 Sensitivity | `raw_results/exp415_sensitivity.csv` | Fixed-objective sweep means/SDs; objective-weight sweep is separate |
-| 13 Temperature | `revision_20260909/analysis/frozen_temperature_contrasts.csv` and raw revision | Paired gains, pointwise CI, Holm p, deadline rates |
-| 14 Transfer | `raw_results/exp417_ood.csv` | Means/SDs with condition labels aligned to actual intervention |
-| 15 Frozen test | `revision_20260909/revision_raw.csv` | Mean/SD by scene/method/temperature, all five settings |
-| 16 Scale | `raw_results/exp413_scalability.csv` | RFOTO objective/runtime mean/SD by scale |
+| Table | CSV | Upstream evidence | Transformation |
+|---:|---|---|---|
+| 5 | `tables/Table05_Main.csv` | `raw_results/exp48_main_comparison.csv` | Scenario/method mean composite objective |
+| 6 | `tables/Table06_Advanced.csv` | `exp423` results and corrected best-count analysis | Aggregate objective, ranks, exclusive/tied best counts, runtime |
+| 7 | `tables/Table07_Matched.csv` | `revision_20260909/revision_raw.csv` | Means by scenario, budget, initialization, and method |
+| 8 | `tables/Table08_Ablation.csv` | `raw_results/exp414_ablation.csv` | Saved components rescored under common objective weights |
+| 9 | `tables/Table09_Controlled_Ablation.csv` | revision records | Greedy-initialized fixed-objective intervention means |
+| 10 | `tables/Table10_Sensitivity.csv` | `raw_results/exp415_sensitivity.csv` | Fixed-objective parameter sweep means and SDs |
+| 11 | `tables/Table11_Temperature.csv` | frozen-temperature contrasts and revision records | Paired gains, pointwise CI, Holm p, and deadline rates |
+| 12 | `tables/Table12_Transfer.csv` | `raw_results/exp417_ood.csv` | Means and SDs with condition labels aligned to the implemented intervention |
+| 13 | `tables/Table13_New_Instances.csv` | revision records | Mean and SD by scenario, method, and temperature |
+| 14 | `tables/Table14_Scalability.csv` | `raw_results/exp413_scalability.csv` | RFOTO-ABC objective and runtime by problem scale |
+| 15 | `tables/Table15_Dynamic.csv` | `raw_results/exp416_dynamic.csv` | Slot means computed within each episode, then mean/SD across three episodes |
 
-Other historical files retain small-reference validation, convergence, reliability stress, fairness tradeoffs, resource scarcity, dynamic warm-start, paired statistics and failure/mapping diagnostics. They are supplementary evidence and must not be represented as extra independent replications of the core revision.
+`Table15_Dynamic.csv` reports rates as fractions. The manuscript multiplies deadline rates by 100 for percentage display. Its labels `Cold-RFOTO (alternative seed)` and `Max-gain` correct the implemented meaning of raw labels `Standard-ABC` and `Max-SINR`; raw values are unchanged.
 
-Field definitions are in `../CODEBOOK.md`. `table_index.json` records current table notes and source paths. `tools/build_tables.py` is the executable mapping.
+Field definitions are in [`../CODEBOOK.md`](../CODEBOOK.md). `table_index.json` stores the exact table title, upstream paths, sample size, evaluation budget, and interpretation note used by the exporter.

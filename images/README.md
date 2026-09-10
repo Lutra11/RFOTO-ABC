@@ -1,20 +1,24 @@
-# Current manuscript figures
+# Manuscript figures
 
-Every listed base name has both `png/<name>.png` (600 dpi) and `pdf/<name>.pdf` (vector). Plot labels are English. The files are the exact checked manuscript figures, only renamed into a single pair of folders.
+This directory contains the **14 figures used by the 10 September 2026 English LaTeX manuscript**. Files under `pdf/` are the exact one-page vector assets referenced by LaTeX. Files under `png/` are matching GitHub previews: experimental plots retain 600 dpi metadata and the large framework preview is 150 dpi.
 
-| Figure | Base name | Source |
-|---|---|---|
-| 1 | Fig01_Workload_Mapping | Processed workload, scenario builder, exp422 mapping validation |
-| 2 | Fig02_Main_Comparison | exp48 main results |
-| 3 | Fig03_Advanced_Comparison | exp423 raw objectives and paired ranks |
-| 4 | Fig04_Matched_Initialization | Revision 1000-FE run traces; 20 instances/stratum |
-| 5 | Fig05_Ablation | exp414 common-weight rescoring and exp420 resource skew |
-| 6 | Fig06_Controlled_Ablation | Revision controlled contrasts, greedy, 1000 FE |
-| 7 | Fig07_Sensitivity | exp415 fixed-objective sensitivity |
-| 8 | Fig08_Frozen_Temperature | Revision test means/standard errors |
-| 9 | Fig09_Scenario_Transfer | exp417 observed-state reoptimization |
-| 10 | Fig10_Frozen_Test | Revision test means and paired contrasts |
+| Manuscript figure | File base name | Recorded source or role |
+|---:|---|---|
+| 1 | `Framework` | System model and RFOTO-ABC solution workflow |
+| 2 | `Fig01_Workload_Mapping` | Alibaba-derived profiles and mapping validation |
+| 3 | `Fig02_Main_Comparison` | `exp48_main_comparison.csv`; updated panel-specific y-axis |
+| 4 | `Fig03_Advanced_Comparison_a_Replaced` | Author-retained panel plus `exp423` ranks and aggregate gaps |
+| 5 | `Fig04_Matched_Initialization` | Revision traces with identical initial populations |
+| 6 | `Fig05_Ablation_Single_Panel` | `exp414_ablation.csv`; single retained panel |
+| 7 | `Fig06_Controlled_Ablation` | Revision controlled contrasts |
+| 8 | `Fig07_Parameter_Sensitivity` | `exp415_sensitivity.csv` |
+| 9 | `Fig08_Prespecified_Temperature` | Frozen-temperature contrasts and revision records |
+| 10 | `Fig09_Resource_Scarcity` | `exp412_resource_scarcity.csv` |
+| 11 | `Fig10_Scenario_Transfer` | `exp417_ood.csv` |
+| 12 | `Fig11_Prespecified_Configurations` | Six new-instance groups in revision records |
+| 13 | `Fig12_Scalability` | `exp413_scalability.csv` |
+| 14 | `Fig13_Dynamic_Warm_Start` | `exp416_dynamic.csv`; corrected dynamic labels |
 
-Original recordings are in `../datas/`. Figure 4 uses mean relative trajectories with no uncertainty band. Figure 6 and right panel of Figure 10 use pointwise paired bootstrap intervals. Figure 8 uses standard errors. The other historical error bars use SD, as documented in the manuscript. Do not interpret an SD bar or pointwise interval as a multiple-comparison-adjusted confidence region.
+The validation command verifies every PDF against the SHA-256 recorded by the LaTeX source manifest, checks the one-to-one PDF/PNG filename set, and checks preview resolution. `python tools/regenerate_figures.py` writes diagnostic recreations to ignored `outputs/`; it does not overwrite these author-approved manuscript assets.
 
-Use `python tools/regenerate_figures.py` to rebuild plots in ignored `outputs/regenerated_figures/` without replacing these frozen manuscript images. Display-only preview plots with substituted values and outdated duplicate exports are excluded.
+Figure 4 and Table 6 retain the author-selected presentation while source-record reconciliation remains pending. Figure 14 summarizes three independent episodes; its 150 correlated slots are not treated as 150 independent replicates.

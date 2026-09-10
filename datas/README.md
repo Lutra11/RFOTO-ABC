@@ -1,14 +1,15 @@
-# Recorded results and current tables
+# Experimental evidence
+
+The data package preserves full recorded evidence while exposing a small manuscript-facing layer.
 
 | Location | Contents |
 |---|---|
-| `raw_results/` | All 24 historical CSV files plus original metadata; original bytes retained |
-| `revision_20260909/` | 180 fresh inputs, 2040 run records, raw results, paired statistics and frozen hashes |
-| `tables/` | Numeric CSV equivalents of current manuscript experimental Tables 7–16 and their source index |
-| `excel/RFOTO_ABC_Main_Results.xlsx` | Ten sheets for Tables 7–16; numeric means, SDs, counts and test results |
-| `excel/RFOTO_ABC_Supplementary_Statistics.xlsx` | Full revision records, 84 controlled contrasts, 24 frozen contrasts, the six temperature contrasts and objective-weight sweep |
-| `release_manifest.json` | SHA-256/size inventory for the release; excludes itself and local outputs |
+| `tables/` | Eleven numeric CSV exports matching manuscript Tables 5–15, plus `table_index.json` |
+| `raw_results/` | All 24 historical CSV files and their original metadata |
+| `revision_20260909/` | 180 frozen instances, 2,040 run records, raw revision results, paired statistics, and source hashes |
 
-Both workbooks use white backgrounds and black fonts. Tables 1–6 are literature/model/setup tables, not new experimental result files. Workbook notes and `tables/table_index.json` preserve sample sizes, budgets and interpretation boundaries.
+Tables 1–4 describe literature, notation, scenarios, and default parameters, so they are not duplicated as experimental CSVs. `tools/build_tables.py` deterministically rebuilds Tables 5–15 without executing an optimizer.
 
-Old scattershot Excel exports were replaced by these two current workbooks. Historical raw CSVs are not deleted. In particular, the old advanced summary's `win_count` is superseded by `revision_20260909/analysis/advanced_corrected_best_counts.csv`; the original summary remains only to preserve its audit trail.
+The previous Excel copies and repository-wide generated manifest were removed because they duplicated authoritative CSV/JSON evidence and increased maintenance noise. No historical observations, negative results, frozen instances, traces, or statistical contrasts were removed.
+
+The old advanced summary's `win_count` is superseded by `revision_20260909/analysis/advanced_corrected_best_counts.csv`; the original file remains for provenance. Dynamic manuscript labels are corrected at export time without changing the underlying `exp416_dynamic.csv` values.
